@@ -23,6 +23,7 @@ return {
         "css",
         "go",
         "rust",
+        "dart",
       },
     },
   },
@@ -99,6 +100,19 @@ return {
         dap = {
           adapter = cfg.get_codelldb_adapter(codelldb_path, liblldb_path),
         },
+      }
+    end,
+  },
+
+  {
+    "nvim-flutter/flutter-tools.nvim",
+    lazy = false,
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+    config = function()
+      require("flutter-tools").setup {
+        fvm = true,
       }
     end,
   },
