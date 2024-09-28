@@ -23,8 +23,11 @@ map(
 map("n", "<Leader>de", "<cmd>lua require'dap'.terminate()<CR>", { desc = "Debugger reset" })
 map("n", "<Leader>dr", "<cmd>lua require'dap'.run_last()<CR>", { desc = "Debugger run last" })
 
--- rustaceanvim
-map("n", "<Leader>dt", "<cmd>lua vim.cmd('RustLsp testables')<CR>", { desc = "Debugger testables" })
+-- rust
+map("n", "<Leader>dt", "<cmd>lua vim.cmd('RustLsp testables')<CR>", { desc = "Debugger Rust testables" })
+map("n", "<leader>rcu", function()
+  require("crates").upgrade_all_crates()
+end, { desc = "update crates" })
 
 map("n", "<leader>dus", function()
   local widgets = require "dap.ui.widgets"
@@ -32,7 +35,7 @@ map("n", "<leader>dus", function()
   sidebar.open()
 end, { desc = "Open debugging sidebar" })
 
--- dap-go
+-- go
 map("n", "<leader>dgt", function()
   require("dap-go").debug_test()
 end, { desc = "Debug go test" })
@@ -41,8 +44,13 @@ map("n", "<leader>dgl", function()
   require("dap-go").debug_last()
 end, { desc = "Debug last go test" })
 
-map("n", "<leader>gsj", "<cmd> GoTagAdd json", { desc = "Add json struct tags" })
-map("n", "<leader>gsy", "<cmd> GoTagAdd yaml", { desc = "Add yaml struct tags" })
+map("n", "<leader>gsj", "<cmd> GoTagAdd json<CR>", { desc = "Add json struct tags" })
+map("n", "<leader>gsy", "<cmd> GoTagAdd yaml<CR>", { desc = "Add yaml struct tags" })
+
+-- flutter
+map("n", "<leader>dfe", "<cmd>FlutterEmulators<CR>", { desc = "Debug Open Flutter Emulator" })
+map("n", "<leader>dfr", "<cmd>FlutterRun<CR>", { desc = "Debug Flutter Run" })
+map("n", "<leader>dfl", "<cmd>FlutterRestart<CR>", { desc = "Debug Flutter Restart" })
 
 -- tmux navigation
 map("n", "<C-h>", "<cmd> TmuxNavigateLeft<CR>", { desc = "window left" })
