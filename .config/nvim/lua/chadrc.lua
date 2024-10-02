@@ -13,7 +13,7 @@ M.base46 = {
 }
 
 M.mason = {
-  pkgs = { "rust-analyzer" },
+  pkgs = { "rust-analyzer", "debugpy" },
 }
 
 return M
