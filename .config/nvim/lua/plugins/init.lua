@@ -25,6 +25,7 @@ return {
         "rust",
         "dart",
         "python",
+        "zig",
       },
     },
   },
