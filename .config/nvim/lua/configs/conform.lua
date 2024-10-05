@@ -5,6 +5,7 @@ local options = {
     html = { "prettier" },
     go = { "gofumpt", "goimports-reviser", "golines" },
     python = { "ruff_format" },
+    zig = { "zigfmt" },
   },
 
   format_on_save = {
