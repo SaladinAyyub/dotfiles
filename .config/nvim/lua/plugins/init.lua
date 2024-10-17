@@ -27,6 +27,7 @@ return {
         "python",
         "zig",
         "toml",
+        "cpp",
       },
     },
   },

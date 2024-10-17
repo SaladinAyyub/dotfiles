@@ -2,7 +2,7 @@
 require("nvchad.configs.lspconfig").defaults()
 
 local lspconfig = require "lspconfig"
-local servers = { "html", "cssls", "htmx", "templ", "pyright", "zls", "taplo" }
+local servers = { "html", "cssls", "htmx", "templ", "pyright", "zls", "taplo", "clangd" }
 local util = require "lspconfig/util"
 local nvlsp = require "nvchad.configs.lspconfig"
 

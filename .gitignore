@@ -1,2 +1,7 @@
 lazy-lock.json
 .config/tmux/plugins/
+
+.config/VSCodium/ 
+!./config/VSCodium/User/keybindings.json
+!./config/VSCodium/User/settings.json
+

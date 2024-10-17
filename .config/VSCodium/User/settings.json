@@ -122,5 +122,6 @@
   "workbench.activityBar.location": "hidden",
   "workbench.colorTheme": "Rosé Pine",
   "workbench.iconTheme": "rose-pine-icons",
-  "terminal.integrated.defaultProfile.linux": "zsh"
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "workbench.startupEditor": "none"
 }
