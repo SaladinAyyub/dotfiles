@@ -120,8 +120,9 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "workbench.activityBar.location": "hidden",
-  "workbench.colorTheme": "Rosé Pine",
-  "workbench.iconTheme": "rose-pine-icons",
+  "workbench.colorTheme": "Tokyo Night",
   "terminal.integrated.defaultProfile.linux": "zsh",
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  "symbols.hidesExplorerArrows": false,
+  "workbench.iconTheme": "symbols"
 }
