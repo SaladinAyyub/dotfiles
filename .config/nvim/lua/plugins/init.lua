@@ -20,6 +20,7 @@ return {
         "lua",
         "vimdoc",
         "html",
+        "templ",
         "css",
         "go",
         "rust",
