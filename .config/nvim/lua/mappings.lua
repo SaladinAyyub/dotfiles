@@ -46,6 +46,7 @@ end, { desc = "Debug last go test" })
 
 map("n", "<leader>gsj", "<cmd> GoTagAdd json<CR>", { desc = "Add json struct tags" })
 map("n", "<leader>gsy", "<cmd> GoTagAdd yaml<CR>", { desc = "Add yaml struct tags" })
+map("n", "<leader>ge", "<cmd> GoIfErr <CR>", { desc = "Go if err block" })
 
 -- flutter
 map("n", "<leader>dfe", "<cmd>FlutterEmulators<CR>", { desc = "Debug Open Flutter Emulator" })
