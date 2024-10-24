@@ -6,7 +6,6 @@ local options = {
     go = { "gofumpt", "goimports-reviser", "golines" },
     python = { "ruff_format" },
     zig = { "zigfmt" },
-    cpp = { "clang-format" },
   },
 
   format_on_save = {
