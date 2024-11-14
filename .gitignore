@@ -5,3 +5,4 @@ lazy-lock.json
 !./config/VSCodium/User/keybindings.json
 !./config/VSCodium/User/settings.json
 
+*.bak
