@@ -1,5 +1,5 @@
 {
-  "telemetry.telemetryLevel: "off",
+  "telemetry.telemetryLevel": "off",
   "editor.formatOnSave": true,
   "editor.suggest.insertMode": "replace",
   "terminal.integrated.fontFamily": "MesloLGS NF",
