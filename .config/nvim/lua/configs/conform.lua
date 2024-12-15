@@ -4,7 +4,7 @@ local options = {
     css = { "prettier" },
     html = { "prettier" },
     go = { "gofumpt", "goimports-reviser", "golines" },
-    python = { "ruff_format" },
+    python = { "ruff_format", "ruff_fix", "ruff_organize_imports" },
     zig = { "zigfmt" },
   },
 
