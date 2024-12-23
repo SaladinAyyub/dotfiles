@@ -18,7 +18,7 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
-zinit light MichaelAquilina/zsh-autoswitch-virtualenv
+zinit light darvid/zsh-poetry
 
 # Add in snippets
 zinit snippet OMZP::git
@@ -59,6 +59,10 @@ alias c='clear'
 
 # Export PATHs
 export PATH=$PATH:$HOME/go/bin
+
+# Pyenv support
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
 
 # Shell integrations
 eval "$(fzf --zsh)"
