@@ -113,6 +113,9 @@ return {
         dap = {
           adapter = cfg.get_codelldb_adapter(codelldb_path, liblldb_path),
         },
+        server = {
+          on_attach = require("nvchad.configs.lspconfig").on_attach,
+        },
       }
     end,
   },
