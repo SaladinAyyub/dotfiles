@@ -129,6 +129,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     brave
+    discord
     ente-auth
     fzf
     git
@@ -136,6 +137,7 @@
     oh-my-posh
     ripgrep
     tmux
+    tutanota-desktop
     vim 
     wget
     zoxide

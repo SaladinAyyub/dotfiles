@@ -17,5 +17,6 @@
     goimports-reviser
     nodePackages.prettier
     ruff
+    pyright
   ];
 }
