@@ -104,6 +104,8 @@
     };
   };
 
+  programs.hyprland.enable = true;
+
   # Install firefox.
   programs.firefox.enable = true;
 
@@ -129,10 +131,12 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     brave
+    cabextract
     discord
     ente-auth
     fzf
     git
+    mangohud
     neovim
     oh-my-posh
     ripgrep
