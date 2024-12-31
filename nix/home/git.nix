@@ -7,8 +7,6 @@
   lfs.enable = true;
   userName = "Saladin";
   userEmail = "saladin@tuta.com";
-  signing.key = null;
-  signing.signByDefault = true;
 
   extraConfig = {
     pull = {
