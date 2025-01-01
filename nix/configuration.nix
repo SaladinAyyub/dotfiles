@@ -19,7 +19,10 @@
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings = {
+    experimental-features = [ "nix-command" "flakes" ];
+    warn-dirty = false;
+  };
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
@@ -104,7 +107,20 @@
     };
   };
 
-  programs.hyprland.enable = true;
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+  };
+
+  xdg.portal = {
+    enable = true;
+    extraPortals = [
+      pkgs.xdg-desktop-portal-gtk # For both
+      pkgs.xdg-desktop-portal-hyprland # For Hyprland
+    ];
+    config.common.default = ["gtk" "hyprland"];
+  };
+
 
   # Install firefox.
   programs.firefox.enable = true;
@@ -132,6 +148,7 @@
   environment.systemPackages = with pkgs; [
     brave
     cabextract
+    davinci-resolve
     discord
     ente-auth
     fzf
@@ -141,7 +158,6 @@
     oh-my-posh
     ripgrep
     tmux
-    tutanota-desktop
     vim 
     wget
     zoxide
