@@ -23,6 +23,7 @@
 
   xdg.enable = true;
 
+  xdg.configFile.hypr.source = config.lib.file.mkOutOfStoreSymlink /home/saladin/.dotfiles/.config/hypr;
   xdg.configFile.nvim.source = config.lib.file.mkOutOfStoreSymlink /home/saladin/.dotfiles/.config/nvim;
   xdg.configFile.ohmyposh.source = config.lib.file.mkOutOfStoreSymlink /home/saladin/.dotfiles/.config/ohmyposh;
   home.file.".zshrc".source = config.lib.file.mkOutOfStoreSymlink /home/saladin/.dotfiles/.zshrc;
@@ -40,11 +41,11 @@
   };
 
   programs = {
-    tmux = import ./tmux.nix {inherit pkgs;};
     alacritty = import ./alacritty.nix {inherit config pkgs;};
-    git = import ./git.nix {inherit config pkgs;};
-    zoxide = import ./zoxide.nix {inherit config pkgs;};
     fzf = import ./fzf.nix {inherit pkgs;};
+    git = import ./git.nix {inherit config pkgs;};
+    tmux = import ./tmux.nix {inherit pkgs;};
+    zoxide = import ./zoxide.nix {inherit config pkgs;};
   };
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
