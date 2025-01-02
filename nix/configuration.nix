@@ -143,10 +143,18 @@
 
   nixpkgs.config.allowUnfree = true;
 
+  hardware.graphics.extraPackages = with pkgs; [
+    mesa.opencl
+  ];
+  environment.variables = {
+    RUSTICL_ENABLE = "radeonsi";
+  };
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     brave
+    clinfo
     davinci-resolve
     discord
     ente-auth
