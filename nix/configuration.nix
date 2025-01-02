@@ -162,6 +162,7 @@
     vim 
     wget
     wl-clipboard
+    xclip
     zoxide
   ];
 
