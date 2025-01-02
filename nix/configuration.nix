@@ -147,7 +147,6 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     brave
-    cabextract
     davinci-resolve
     discord
     ente-auth
@@ -161,8 +160,6 @@
     tmux
     vim 
     wget
-    wl-clipboard
-    xclip
     zoxide
   ];
 

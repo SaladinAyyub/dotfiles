@@ -9,6 +9,7 @@
     nodejs
     lua-language-server
     stylua
+    taplo
     nil
     gopls
     delve
