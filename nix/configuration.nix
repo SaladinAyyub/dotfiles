@@ -156,10 +156,12 @@
     mangohud
     neovim
     oh-my-posh
+    pfetch
     ripgrep
     tmux
     vim 
     wget
+    wl-clipboard
     zoxide
   ];
 
