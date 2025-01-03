@@ -157,17 +157,27 @@
     clinfo
     davinci-resolve
     discord
+    dunst
     ente-auth
     fzf
     git
+    grim
+    libnotify
     mangohud
     neovim
+    networkmanagerapplet
     oh-my-posh
     pfetch
     ripgrep
+    rofi-wayland
+    swww
+    slurp
     tmux
+    xfce.thunar
     vim 
+    waybar
     wget
+    wl-clipboard-rs
     zoxide
   ];
 
