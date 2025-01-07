@@ -26,6 +26,9 @@
   xdg.configFile.hypr.source = config.lib.file.mkOutOfStoreSymlink /home/saladin/.dotfiles/.config/hypr;
   xdg.configFile.nvim.source = config.lib.file.mkOutOfStoreSymlink /home/saladin/.dotfiles/.config/nvim;
   xdg.configFile.ohmyposh.source = config.lib.file.mkOutOfStoreSymlink /home/saladin/.dotfiles/.config/ohmyposh;
+  xdg.configFile.dunst.source = config.lib.file.mkOutOfStoreSymlink /home/saladin/.dotfiles/.config/dunst;
+  xdg.configFile.waybar.source = config.lib.file.mkOutOfStoreSymlink /home/saladin/.dotfiles/.config/waybar;
+  xdg.configFile.rofi.source = config.lib.file.mkOutOfStoreSymlink /home/saladin/.dotfiles/.config/rofi;
   home.file.".zshrc".source = config.lib.file.mkOutOfStoreSymlink /home/saladin/.dotfiles/.zshrc;
 
   dconf = {

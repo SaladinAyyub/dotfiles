@@ -12,6 +12,8 @@
       ./modules/languages.nix
     ];
 
+  boot.kernelPackages = pkgs.linuxPackages_zen;
+
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -68,7 +70,7 @@
   services.printing.enable = true;
 
   # Enable sound with pipewire.
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -159,6 +161,7 @@
     discord
     dunst
     ente-auth
+    eww
     fzf
     git
     grim
