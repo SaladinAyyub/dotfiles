@@ -165,6 +165,7 @@
     fzf
     git
     grim
+    itch
     libnotify
     mangohud
     neovim
@@ -175,6 +176,7 @@
     rofi-wayland
     swww
     slurp
+    tutanota-desktop
     tmux
     xfce.thunar
     vim 
