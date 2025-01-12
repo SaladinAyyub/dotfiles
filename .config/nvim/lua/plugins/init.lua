@@ -25,6 +25,7 @@ return {
         "rust",
         "dart",
         "python",
+        "odin",
         "zig",
         "toml",
       },
@@ -73,7 +74,7 @@ return {
     dependencies = "mfussenegger/nvim-dap",
   },
 
-  { "williamboman/mason.nvim", enabled = false  },
+  { "williamboman/mason.nvim", enabled = false },
 
   {
     "olexsmir/gopher.nvim",

@@ -19,5 +19,6 @@
     nodePackages.prettier
     ruff
     pyright
+    ols
   ];
 }
