@@ -48,6 +48,7 @@
     fzf = import ./fzf.nix {inherit pkgs;};
     git = import ./git.nix {inherit config pkgs;};
     tmux = import ./tmux.nix {inherit pkgs;};
+    vscode = import ./vscode.nix {inherit pkgs;};
     zoxide = import ./zoxide.nix {inherit config pkgs;};
   };
 
