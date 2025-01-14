@@ -20,6 +20,5 @@
     ruff
     pyright
     odin
-    ols
   ];
 }
