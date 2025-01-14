@@ -23,6 +23,7 @@
     "editor.suggest.insertMode" = "replace";
     "editor.minimap.enabled" = false;
     "breadcrumbs.enabled" = false;
+    "workbench.activityBar.location" = "hidden";
     "update.showReleaseNotes" = false;
     "zenMode.hideLineNumbers" = false;
     "editor.lineNumbers" = "relative";
