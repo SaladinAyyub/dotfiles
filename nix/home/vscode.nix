@@ -4,6 +4,7 @@
 }: {
   enable = true;
   package = pkgs.vscode.fhs;
+  mutableExtensionsDir = false;
   extensions = with pkgs.vscode-extensions; [
     vscodevim.vim
     danielgavin.ols
@@ -11,6 +12,7 @@
     charliermarsh.ruff
     enkia.tokyo-night
     esbenp.prettier-vscode
+    jnoortheen.nix-ide
   ];
   userSettings = {
     "workbench.startupEditor" = "none";
