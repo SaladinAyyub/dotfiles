@@ -253,5 +253,21 @@
       command = "workbench.action.toggleZenMode";
       key = "ctrl+z";
     }
+    {
+      key = "tab";
+      command = "-acceptSelectedSuggestion";
+      when = "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus";
+    }
+
+    {
+      key = "tab";
+      command = "selectNextSuggestion";
+      when = "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus && !inSnippetMode";
+    }
+    {
+      key = "shift+tab";
+      command = "selectPrevSuggestion";
+      when = "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus && !inSnippetMode";
+    }
   ];
 }
