@@ -178,6 +178,16 @@
       };
       "editor.defaultFormatter" = "charliermarsh.ruff";
     };
+
+    "nix.enableLanguageServer" = true;
+    "nix.serverPath" = "nil";
+    "nix.serverSettings" = {
+      "nil" = {
+        "formatting" = {
+          "command" = [ "nixfmt" ];
+        };
+      };
+    };
   };
 
   keybindings = [
