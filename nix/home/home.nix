@@ -44,12 +44,12 @@
   };
 
   programs = {
-    alacritty = import ./alacritty.nix {inherit config pkgs;};
-    fzf = import ./fzf.nix {inherit pkgs;};
-    git = import ./git.nix {inherit config pkgs;};
-    tmux = import ./tmux.nix {inherit pkgs;};
-    vscode = import ./vscode.nix {inherit pkgs;};
-    zoxide = import ./zoxide.nix {inherit config pkgs;};
+    alacritty = import ./alacritty.nix { inherit config pkgs; };
+    fzf = import ./fzf.nix { inherit pkgs; };
+    git = import ./git.nix { inherit config pkgs; };
+    tmux = import ./tmux.nix { inherit pkgs; };
+    vscode = import ./vscode.nix { inherit pkgs; };
+    zoxide = import ./zoxide.nix { inherit config pkgs; };
   };
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage

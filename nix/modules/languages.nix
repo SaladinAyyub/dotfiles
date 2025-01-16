@@ -1,4 +1,5 @@
-{pkgs, ...}: {
+{ pkgs, ... }:
+{
   environment.systemPackages = with pkgs; [
     gcc
     go
@@ -11,6 +12,7 @@
     stylua
     taplo
     nil
+    nixfmt-rfc-style
     gopls
     delve
     gofumpt

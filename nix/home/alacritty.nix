@@ -1,7 +1,8 @@
 {
   pkgs,
   ...
-}: {
+}:
+{
   enable = true;
   package = pkgs.alacritty;
 
@@ -27,18 +28,20 @@
       live_config_reload = true;
     };
 
-    font = let
-      jetbrainsMono = style: {
-        family = "JetBrainsMono Nerd Font";
-        inherit style;
+    font =
+      let
+        jetbrainsMono = style: {
+          family = "JetBrainsMono Nerd Font";
+          inherit style;
+        };
+      in
+      {
+        size = 15;
+        normal = jetbrainsMono "Regular";
+        bold = jetbrainsMono "Bold";
+        italic = jetbrainsMono "Italic";
+        bold_italic = jetbrainsMono "Bold Italic";
       };
-    in {
-      size = 15;
-      normal = jetbrainsMono "Regular";
-      bold = jetbrainsMono "Bold";
-      italic = jetbrainsMono "Italic";
-      bold_italic = jetbrainsMono "Bold Italic";
-    };
 
     mouse.hide_when_typing = true;
 

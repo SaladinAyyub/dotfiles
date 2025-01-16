@@ -2,7 +2,8 @@
   config,
   pkgs,
   ...
-}: {
+}:
+{
   enable = true;
   lfs.enable = true;
   userName = "Saladin";

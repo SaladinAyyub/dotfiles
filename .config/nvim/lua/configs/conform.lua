@@ -7,6 +7,7 @@ local options = {
     python = { "ruff_format", "ruff_fix", "ruff_organize_imports" },
     zig = { "zigfmt" },
     odin = { "odinfmt" },
+    nix = { "nixfmt" },
   },
 
   format_on_save = {

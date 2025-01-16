@@ -2,15 +2,20 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, inputs, ... }:
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-      inputs.home-manager.nixosModules.default
-      ./modules/languages.nix
-    ];
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+    inputs.home-manager.nixosModules.default
+    ./modules/languages.nix
+  ];
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
@@ -22,7 +27,10 @@
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   nix.settings = {
-    experimental-features = [ "nix-command" "flakes" ];
+    experimental-features = [
+      "nix-command"
+      "flakes"
+    ];
     warn-dirty = false;
   };
 
@@ -93,7 +101,10 @@
   users.users.saladin = {
     isNormalUser = true;
     description = "Saladin";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+    ];
     shell = pkgs.zsh;
     openssh.authorizedKeys.keys = [
       "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILhxuQm7+naB8nLmZaX8z/3WKI1w+TuHEkEakwO6TQxE saladin nixos"
@@ -120,34 +131,30 @@
       pkgs.xdg-desktop-portal-gtk # For both
       pkgs.xdg-desktop-portal-hyprland # For Hyprland
     ];
-    config.common.default = ["gtk" "hyprland"];
+    config.common.default = [
+      "gtk"
+      "hyprland"
+    ];
   };
-
 
   # Install firefox.
   programs.firefox.enable = true;
 
   programs.steam = {
     enable = true;
-    extraCompatPackages = [
-      pkgs.proton-ge-bin
-    ];
+    extraCompatPackages = [ pkgs.proton-ge-bin ];
     gamescopeSession = {
       enable = true;
     };
   };
 
-  fonts.packages = with pkgs; [
-    nerd-fonts.jetbrains-mono
-  ];
+  fonts.packages = with pkgs; [ nerd-fonts.jetbrains-mono ];
 
   programs.gamemode.enable = true;
 
   nixpkgs.config.allowUnfree = true;
 
-  hardware.graphics.extraPackages = with pkgs; [
-    mesa.opencl
-  ];
+  hardware.graphics.extraPackages = with pkgs; [ mesa.opencl ];
   environment.variables = {
     RUSTICL_ENABLE = "radeonsi";
   };
@@ -179,7 +186,7 @@
     tutanota-desktop
     tmux
     xfce.thunar
-    vim 
+    vim
     waybar
     wget
     wl-clipboard-rs

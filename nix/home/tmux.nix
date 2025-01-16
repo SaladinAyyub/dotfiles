@@ -1,4 +1,5 @@
-{pkgs, ...}: let
+{ pkgs, ... }:
+let
   tokyo-night = pkgs.tmuxPlugins.mkTmuxPlugin {
     pluginName = "tokyo-night";
     version = "unstable-2023-01-06";
@@ -9,7 +10,8 @@
       sha256 = "sha256-3rMYYzzSS2jaAMLjcQoKreE0oo4VWF9dZgDtABCUOtY=";
     };
   };
-in {
+in
+{
   enable = true;
 
   aggressiveResize = true;

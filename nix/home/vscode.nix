@@ -1,7 +1,8 @@
 {
   pkgs,
   ...
-}: {
+}:
+{
   enable = true;
   package = pkgs.vscode.fhs;
   mutableExtensionsDir = false;
@@ -35,35 +36,138 @@
     "editor.fontSize" = 16;
     "window.zoomLevel" = 0.5;
     "vim.normalModeKeyBindingsNonRecursive" = [
-      { "before" = ["<S-tab>"]; "commands" = [":bprevious"]; }   # switch buffers/ tabs
-      { "before" = ["tab"]; "commands" = [":bnext"]; }
-      { "before" = ["leader" "v"]; "commands"= [":vsplit"]; }    # split panes
-      { "before" = ["leader" "s"]; "commands" = [":split"]; }
-      { "before" = ["<C-h>"]; "commands" = ["workbench.action.focusLeftGroup"]; }   # move across panes
-      { "before" = ["<C-j>"]; "commands" = ["workbench.action.focusBelowGroup"]; }
-      { "before" = ["<C-k>"]; "commands" = ["workbench.action.focusAboveGroup"]; }
-      { "before" = ["<C-l>"]; "commands" = ["workbench.action.focusRightGroup"]; }
-      { "before" = ["leader" "w"]; "commands" = [":w!"]; }   # quick commands
-      { "before" = ["leader" "q"]; "commands" = [":q!"]; }
-      { "before" = ["leader" "x"]; "commands" = [":x!"]; }
-      { "before" = ["[" "d"]; "commands" = ["editor.action.marker.prev"]; } # move across warnings / errors
-      { "before" = ["]" "d"]; "commands" = ["editor.action.marker.next"]; }
-      { "before" = ["leader" "c" "a"]; "commands" = ["editor.action.quickFix"]; } # quick actions
-      { "before" = ["leader" "f"]; "commands" = ["workbench.action.quickOpen"]; } # find files
-      { "before" = ["leader" "p"]; "commands" = ["editor.action.formatDocument"]; } # format
-      { "before" = ["g" "h"]; "commands" = ["editor.action.showDefinitionPreviewHover"]; } # preview however definition
+      {
+        "before" = [ "<S-tab>" ];
+        "commands" = [ ":bprevious" ];
+      } # switch buffers/ tabs
+      {
+        "before" = [ "tab" ];
+        "commands" = [ ":bnext" ];
+      }
+      {
+        "before" = [
+          "leader"
+          "v"
+        ];
+        "commands" = [ ":vsplit" ];
+      } # split panes
+      {
+        "before" = [
+          "leader"
+          "s"
+        ];
+        "commands" = [ ":split" ];
+      }
+      {
+        "before" = [ "<C-h>" ];
+        "commands" = [ "workbench.action.focusLeftGroup" ];
+      } # move across panes
+      {
+        "before" = [ "<C-j>" ];
+        "commands" = [ "workbench.action.focusBelowGroup" ];
+      }
+      {
+        "before" = [ "<C-k>" ];
+        "commands" = [ "workbench.action.focusAboveGroup" ];
+      }
+      {
+        "before" = [ "<C-l>" ];
+        "commands" = [ "workbench.action.focusRightGroup" ];
+      }
+      {
+        "before" = [
+          "leader"
+          "w"
+        ];
+        "commands" = [ ":w!" ];
+      } # quick commands
+      {
+        "before" = [
+          "leader"
+          "q"
+        ];
+        "commands" = [ ":q!" ];
+      }
+      {
+        "before" = [
+          "leader"
+          "x"
+        ];
+        "commands" = [ ":x!" ];
+      }
+      {
+        "before" = [
+          "["
+          "d"
+        ];
+        "commands" = [ "editor.action.marker.prev" ];
+      } # move across warnings / errors
+      {
+        "before" = [
+          "]"
+          "d"
+        ];
+        "commands" = [ "editor.action.marker.next" ];
+      }
+      {
+        "before" = [
+          "leader"
+          "c"
+          "a"
+        ];
+        "commands" = [ "editor.action.quickFix" ];
+      } # quick actions
+      {
+        "before" = [
+          "leader"
+          "f"
+        ];
+        "commands" = [ "workbench.action.quickOpen" ];
+      } # find files
+      {
+        "before" = [
+          "leader"
+          "p"
+        ];
+        "commands" = [ "editor.action.formatDocument" ];
+      } # format
+      {
+        "before" = [
+          "g"
+          "h"
+        ];
+        "commands" = [ "editor.action.showDefinitionPreviewHover" ];
+      } # preview however definition
     ];
 
     "vim.visualModeKeyBindings" = [
-      { "before" = ["<"]; "commands" = ["editor.action.outdentLines"]; } # indent
-      { "before" = [">"]; "commands" = ["editor.action.indentLines"]; }
-      { "before" = ["J"]; "commands" = ["editor.action.moveLinesDownAction"]; } # move complete lines in visual mode
-      { "before" = ["K"]; "commands" = ["editor.action.moveLinesUpAction"]; }
-      { "before" = ["leader" "c"]; "commands" = ["editor.action.commentLine"]; } # comment line
+      {
+        "before" = [ "<" ];
+        "commands" = [ "editor.action.outdentLines" ];
+      } # indent
+      {
+        "before" = [ ">" ];
+        "commands" = [ "editor.action.indentLines" ];
+      }
+      {
+        "before" = [ "J" ];
+        "commands" = [ "editor.action.moveLinesDownAction" ];
+      } # move complete lines in visual mode
+      {
+        "before" = [ "K" ];
+        "commands" = [ "editor.action.moveLinesUpAction" ];
+      }
+      {
+        "before" = [
+          "leader"
+          "c"
+        ];
+        "commands" = [ "editor.action.commentLine" ];
+      } # comment line
     ];
 
     "[jsonc]" = {
-    "editor.defaultFormatter" = "esbenp.prettier-vscode";
+      "editor.defaultFormatter" = "esbenp.prettier-vscode";
     };
 
     "[python]" = {
