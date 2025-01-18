@@ -165,6 +165,7 @@
     brave
     clinfo
     davinci-resolve
+    direnv
     discord
     dunst
     ente-auth

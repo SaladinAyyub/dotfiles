@@ -14,6 +14,7 @@
     enkia.tokyo-night
     esbenp.prettier-vscode
     jnoortheen.nix-ide
+    mkhl.direnv
   ];
   userSettings = {
     "workbench.startupEditor" = "none";
@@ -32,7 +33,7 @@
     "editor.lineNumbers" = "relative";
     "vim.leader" = "<Space>";
     "vim.hlsearch" = true;
-    "editor.fontFamily" = "JetBrains Mono";
+    "editor.fontFamily" = "JetBrainsMono Nerd Font";
     "editor.fontSize" = 16;
     "window.zoomLevel" = 0.5;
     "vim.normalModeKeyBindingsNonRecursive" = [
