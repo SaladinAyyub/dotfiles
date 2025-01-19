@@ -15,6 +15,8 @@
     esbenp.prettier-vscode
     jnoortheen.nix-ide
     mkhl.direnv
+    github.copilot
+    github.copilot-chat
   ];
   userSettings = {
     "workbench.startupEditor" = "none";
@@ -28,6 +30,7 @@
     "editor.minimap.enabled" = false;
     "breadcrumbs.enabled" = false;
     "workbench.activityBar.location" = "hidden";
+    "update.mode" = "none";
     "update.showReleaseNotes" = false;
     "zenMode.hideLineNumbers" = false;
     "editor.lineNumbers" = "relative";
