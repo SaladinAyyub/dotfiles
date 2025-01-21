@@ -17,6 +17,7 @@
     mkhl.direnv
     github.copilot
     github.copilot-chat
+    ziglang.vscode-zig
   ];
   userSettings = {
     "workbench.startupEditor" = "none";

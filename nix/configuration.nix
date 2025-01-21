@@ -171,6 +171,7 @@
     ente-auth
     eww
     fzf
+    ghostty
     git
     grim
     itch
@@ -186,7 +187,6 @@
     slurp
     tutanota-desktop
     tmux
-    xfce.thunar
     vim
     waybar
     wget

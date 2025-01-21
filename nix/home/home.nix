@@ -46,6 +46,7 @@
   programs = {
     alacritty = import ./alacritty.nix { inherit config pkgs; };
     fzf = import ./fzf.nix { inherit pkgs; };
+    ghostty = import ./ghostty.nix { inherit pkgs; };
     git = import ./git.nix { inherit config pkgs; };
     tmux = import ./tmux.nix { inherit pkgs; };
     vscode = import ./vscode.nix { inherit pkgs; };
