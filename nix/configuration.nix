@@ -128,7 +128,7 @@
   xdg.portal = {
     enable = true;
     extraPortals = [
-      pkgs.xdg-desktop-portal-gtk # For both
+      pkgs.xdg-desktop-portal-gnome # For both
       pkgs.xdg-desktop-portal-hyprland # For Hyprland
     ];
     config.common.default = [
@@ -173,6 +173,7 @@
     fzf
     ghostty
     git
+    godot_4
     grim
     itch
     libnotify

@@ -23,7 +23,6 @@ return {
         "css",
         "go",
         "rust",
-        "dart",
         "python",
         "odin",
         "zig",
@@ -110,19 +109,6 @@ return {
   },
 
   {
-    "nvim-flutter/flutter-tools.nvim",
-    lazy = false,
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-    },
-    config = function()
-      require("flutter-tools").setup {
-        fvm = true,
-      }
-    end,
-  },
-
-  {
     "saecki/crates.nvim",
     ft = { "toml" },
     config = function()
@@ -140,6 +126,10 @@ return {
   },
   {
     "christoomey/vim-tmux-navigator",
+    lazy = false,
+  },
+  {
+    "direnv/direnv.vim",
     lazy = false,
   },
 }

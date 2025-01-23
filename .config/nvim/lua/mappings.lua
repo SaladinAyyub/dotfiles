@@ -48,11 +48,6 @@ map("n", "<leader>gsj", "<cmd> GoTagAdd json<CR>", { desc = "Add json struct tag
 map("n", "<leader>gsy", "<cmd> GoTagAdd yaml<CR>", { desc = "Add yaml struct tags" })
 map("n", "<leader>ge", "<cmd> GoIfErr <CR>", { desc = "Go if err block" })
 
--- flutter
-map("n", "<leader>dfe", "<cmd>FlutterEmulators<CR>", { desc = "Debug Open Flutter Emulator" })
-map("n", "<leader>dfr", "<cmd>FlutterRun<CR>", { desc = "Debug Flutter Run" })
-map("n", "<leader>dfl", "<cmd>FlutterRestart<CR>", { desc = "Debug Flutter Restart" })
-
 -- python
 map("n", "<leader>dpr", function()
   require("dap-python").test_method()
