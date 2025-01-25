@@ -25,6 +25,7 @@
     "window.titleBarStyle" = "custom";
     "window.commandCenter" = true;
     "workbench.colorTheme" = "Tokyo Night";
+    "extensions.ignoreRecommendations" = true;
     "files.autoSave" = "off";
     "editor.formatOnSave" = true;
     "telemetry.telemetryLevel" = "off";
