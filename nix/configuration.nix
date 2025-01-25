@@ -195,6 +195,13 @@
     zoxide
   ];
 
+  programs.steam.package = pkgs.steam.override {
+    extraPkgs =
+      pkgs: with pkgs; [
+        nss
+      ];
+  };
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
