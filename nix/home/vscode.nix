@@ -18,6 +18,7 @@
     github.copilot
     github.copilot-chat
     ziglang.vscode-zig
+    ms-vscode.cpptools
   ];
   userSettings = {
     "workbench.startupEditor" = "none";
