@@ -177,6 +177,7 @@
     grim
     itch
     libnotify
+    lutris
     mangohud
     neovim
     networkmanagerapplet

@@ -51,6 +51,7 @@
     tmux = import ./tmux.nix { inherit pkgs; };
     vscode = import ./vscode.nix { inherit pkgs; };
     zoxide = import ./zoxide.nix { inherit config pkgs; };
+    obs-studio = import ./obs-studio.nix { inherit config pkgs; };
   };
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
