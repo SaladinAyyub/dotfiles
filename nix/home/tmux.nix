@@ -73,6 +73,7 @@ in
     set -g @tokyo-night-tmux_window_id_style hsquare
     set -g @tokyo-night-tmux_show_datetime 0
     set -g @tokyo-night-tmux_show_git 0
+    set -g @tokyo-night-tmux_transparent 1
 
     run-shell ${tokyo-night}/share/tmux-plugins/tokyo-night/tokyo-night.tmux
 
