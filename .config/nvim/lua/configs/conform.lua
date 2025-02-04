@@ -8,6 +8,7 @@ local options = {
     zig = { "zigfmt" },
     odin = { "odinfmt" },
     nix = { "nixfmt" },
+    typescript = { "prettier" },
   },
 
   format_on_save = {

@@ -3,7 +3,6 @@
   environment.systemPackages = with pkgs; [
     gcc
     go
-    rustup
     gnumake
     zig
     zls
