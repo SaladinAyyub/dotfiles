@@ -23,12 +23,6 @@ map(
 map("n", "<Leader>de", "<cmd>lua require'dap'.terminate()<CR>", { desc = "Debugger reset" })
 map("n", "<Leader>dr", "<cmd>lua require'dap'.run_last()<CR>", { desc = "Debugger run last" })
 
--- rust
-map("n", "<Leader>dt", "<cmd>lua vim.cmd('RustLsp testables')<CR>", { desc = "Debugger Rust testables" })
-map("n", "<leader>rcu", function()
-  require("crates").upgrade_all_crates()
-end, { desc = "update crates" })
-
 map("n", "<leader>dus", function()
   local widgets = require "dap.ui.widgets"
   local sidebar = widgets.sidebar(widgets.scopes)
