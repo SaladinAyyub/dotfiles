@@ -15,6 +15,6 @@
     window-padding-x = 5;
     window-padding-y = 5;
     window-save-state = "always";
-    background-opacity = 0.9;
+    background-opacity = 0.8;
   };
 }
