@@ -148,7 +148,10 @@
     };
   };
 
-  fonts.packages = with pkgs; [ nerd-fonts.jetbrains-mono ];
+  fonts.packages = with pkgs; [
+    nerd-fonts.jetbrains-mono
+    iosevka
+  ];
 
   programs.gamemode.enable = true;
 
@@ -182,6 +185,7 @@
     neovim
     networkmanagerapplet
     oh-my-posh
+    papirus-icon-theme
     pfetch
     ripgrep
     rofi-wayland
