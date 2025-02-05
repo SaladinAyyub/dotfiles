@@ -21,6 +21,7 @@ return {
         "vimdoc",
         "html",
         "css",
+        "json",
         "go",
         "svelte",
         "python",
