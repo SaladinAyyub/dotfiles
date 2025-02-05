@@ -172,7 +172,6 @@
     discord
     dunst
     ente-auth
-    eww
     fzf
     ghostty
     git
