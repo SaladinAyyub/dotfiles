@@ -185,6 +185,7 @@
     networkmanagerapplet
     oh-my-posh
     papirus-icon-theme
+    pavucontrol
     pfetch
     ripgrep
     rofi-wayland
@@ -198,13 +199,6 @@
     wl-clipboard-rs
     zoxide
   ];
-
-  programs.steam.package = pkgs.steam.override {
-    extraPkgs =
-      pkgs: with pkgs; [
-        nss
-      ];
-  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

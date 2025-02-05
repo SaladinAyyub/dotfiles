@@ -1,7 +1,6 @@
 { pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
-    gcc
     go
     gnumake
     zig
@@ -22,5 +21,6 @@
     pyright
     odin
     ols
+    vscode-langservers-extracted
   ];
 }
