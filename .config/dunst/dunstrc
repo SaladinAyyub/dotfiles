@@ -217,8 +217,7 @@
     # Paths to default icons.
 
     #icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
-
-    icon_path = $HOME/.local/share/icons/Tela-Dark/48x48/actions/:$HOME/.local/share/icons/Tela-Dark/48x48/apps/:$HOME/.local/share/icons/Tela-Dark/48x48/devices/:$HOME/.local/share/icons/Tela-Dark/48x48/emblems/:$HOME/.local/share/icons/Tela-Dark/48x48/emotes/:$HOME/.local/share/icons/Tela-Dark/48x48/mimetypes/:$HOME/.local/share/icons/Tela-Dark/48x48/places/:$HOME/.local/share/icons/Tel-Dark/48x48/status/
+    icon_theme = "Papirus"
 
     ### History ###
 
@@ -232,10 +231,10 @@
     ### Misc/Advanced ###
 
     # dmenu path.
-    dmenu = /usr/bin/dmenu -p dunst:
+    dmenu = rofi -dmenu -p dunst:
 
     # Browser for opening urls in context menu.
-    browser = /usr/bin/firefox -new-tab
+    browser = brave --new-tab
 
     # Always run rule-defined scripts, even if the notification is suppressed
     always_run_script = true
@@ -251,7 +250,7 @@
     # corners.
     # The radius will be automatically lowered if it exceeds half of the
     # notification height to avoid clipping text and/or icons.
-    corner_radius = 0
+    corner_radius = 12
 
     # Ignore the dbus closeNotification message.
     # Useful to enforce the timeout set by dunst configuration. Without this
