@@ -192,6 +192,7 @@
     swww
     slurp
     tutanota-desktop
+    onlyoffice-desktopeditors
     tmux
     vim
     waybar
