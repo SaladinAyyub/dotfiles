@@ -19,6 +19,7 @@
   # environment.
   home.packages = with pkgs; [
     protonup
+    bibata-cursors
   ];
 
   xdg.enable = true;
@@ -40,6 +41,10 @@
     enable = true;
     gtk3.extraConfig = {
       gtk-application-prefer-dark-theme = true;
+    };
+    cursorTheme = {
+      name = "Bibata-Modern-Classic";
+      package = pkgs.bibata-cursors;
     };
   };
 
