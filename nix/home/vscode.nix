@@ -6,7 +6,7 @@
   enable = true;
   package = pkgs.vscode.fhs;
   mutableExtensionsDir = false;
-  extensions = with pkgs.vscode-extensions; [
+  profiles.default.extensions = with pkgs.vscode-extensions; [
     vscodevim.vim
     danielgavin.ols
     ms-python.python
@@ -20,7 +20,7 @@
     ziglang.vscode-zig
     ms-vscode.cpptools
   ];
-  userSettings = {
+  profiles.defaults.userSettings = {
     "workbench.startupEditor" = "none";
     "window.titleBarStyle" = "custom";
     "window.commandCenter" = true;
@@ -197,7 +197,7 @@
     };
   };
 
-  keybindings = [
+  profiles.default.keybindings = [
     {
       key = "ctrl+shift+n";
       command = "workbench.action.terminal.focusNext";

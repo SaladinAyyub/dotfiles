@@ -77,6 +77,9 @@
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
+  # Enable gnome keyring
+  services.gnome.gnome-keyring.enable = true;
+
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
@@ -186,6 +189,7 @@
     papirus-icon-theme
     pavucontrol
     pfetch
+    protontricks
     ripgrep
     rofi-wayland
     swww
