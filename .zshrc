@@ -64,6 +64,7 @@ alias nv='nvim'
 
 # Export PATHs
 export PATH=$PATH:$HOME/go/bin
+export PATH=$PATH:$HOME/.local/bin
 
 # Pyenv support
 export PYENV_ROOT="$HOME/.pyenv"

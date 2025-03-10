@@ -18,7 +18,10 @@
     goimports-reviser
     nodePackages.prettier
     ruff
+    svelte-language-server
+    typescript-language-server
     pyright
+    python3
     odin
     ols
     vscode-langservers-extracted
