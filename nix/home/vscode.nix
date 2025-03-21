@@ -18,9 +18,8 @@
     github.copilot
     github.copilot-chat
     ziglang.vscode-zig
-    ms-vscode.cpptools
   ];
-  profiles.defaults.userSettings = {
+  profiles.default.userSettings = {
     "workbench.startupEditor" = "none";
     "window.titleBarStyle" = "custom";
     "window.commandCenter" = true;
