@@ -19,9 +19,9 @@
       mkhl.direnv
       github.copilot
       github.copilot-chat
-      ziglang.vscode-zig
       golang.go
       redhat.vscode-yaml
+      ritwickdey.liveserver
     ]
     ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       {
@@ -36,12 +36,26 @@
         version = "1.13.0";
         sha256 = "sha256-zryzoO9sb1+Kszwup5EhnN/YDmAPz7TOQW9I/K28Fmg=";
       }
+      {
+        name = "symbols";
+        publisher = "miguelsolorio";
+        version = "0.0.22";
+        sha256 = "sha256-LZYyz7NxOkLuSIPMOPeUPQIsfq4vI+3NfN5MklQlxEw=";
+      }
+      {
+        name = "fluent-icons";
+        publisher = "miguelsolorio";
+        version = "0.0.19";
+        sha256 = "sha256-OfPSh0SapT+YOfi0cz3ep8hEhgCTHpjs1FfmgAyjN58=";
+      }
     ];
   profiles.default.userSettings = {
     "workbench.startupEditor" = "none";
     "window.titleBarStyle" = "custom";
     "window.commandCenter" = true;
     "workbench.colorTheme" = "Tokyo Night";
+    "workbench.productIconTheme" = "fluent-icons";
+    "workbench.iconTheme" = "symbols";
     "extensions.ignoreRecommendations" = true;
     "files.autoSave" = "off";
     "editor.formatOnSave" = true;
@@ -191,6 +205,18 @@
     ];
 
     "[jsonc]" = {
+      "editor.defaultFormatter" = "esbenp.prettier-vscode";
+    };
+    "[html]" = {
+      "editor.defaultFormatter" = "esbenp.prettier-vscode";
+    };
+    "[css]" = {
+      "editor.defaultFormatter" = "esbenp.prettier-vscode";
+    };
+    "[typescript]" = {
+      "editor.defaultFormatter" = "esbenp.prettier-vscode";
+    };
+    "[javascript]" = {
       "editor.defaultFormatter" = "esbenp.prettier-vscode";
     };
 
