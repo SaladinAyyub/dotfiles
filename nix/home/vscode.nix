@@ -6,19 +6,37 @@
   enable = true;
   package = pkgs.vscode.fhs;
   mutableExtensionsDir = false;
-  profiles.default.extensions = with pkgs.vscode-extensions; [
-    vscodevim.vim
-    danielgavin.ols
-    ms-python.python
-    charliermarsh.ruff
-    enkia.tokyo-night
-    esbenp.prettier-vscode
-    jnoortheen.nix-ide
-    mkhl.direnv
-    github.copilot
-    github.copilot-chat
-    ziglang.vscode-zig
-  ];
+  profiles.default.extensions =
+    with pkgs.vscode-extensions;
+    [
+      vscodevim.vim
+      danielgavin.ols
+      ms-python.python
+      charliermarsh.ruff
+      enkia.tokyo-night
+      esbenp.prettier-vscode
+      jnoortheen.nix-ide
+      mkhl.direnv
+      github.copilot
+      github.copilot-chat
+      ziglang.vscode-zig
+      golang.go
+      redhat.vscode-yaml
+    ]
+    ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
+      {
+        name = "vscode-expo-tools";
+        publisher = "expo";
+        version = "1.6.0";
+        sha256 = "sha256-on+QlNwHQzmBBDYkRWJ2hVMuW+xLhJHx7Og6tuR2nMo=";
+      }
+      {
+        name = "vscode-react-native";
+        publisher = "msjsdiag";
+        version = "1.13.0";
+        sha256 = "sha256-zryzoO9sb1+Kszwup5EhnN/YDmAPz7TOQW9I/K28Fmg=";
+      }
+    ];
   profiles.default.userSettings = {
     "workbench.startupEditor" = "none";
     "window.titleBarStyle" = "custom";
