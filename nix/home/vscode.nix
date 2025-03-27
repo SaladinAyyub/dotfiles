@@ -21,7 +21,6 @@
       github.copilot-chat
       golang.go
       redhat.vscode-yaml
-      ritwickdey.liveserver
     ]
     ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       {
@@ -47,6 +46,18 @@
         publisher = "miguelsolorio";
         version = "0.0.19";
         sha256 = "sha256-OfPSh0SapT+YOfi0cz3ep8hEhgCTHpjs1FfmgAyjN58=";
+      }
+      {
+        name = "five-server";
+        publisher = "yandeu";
+        version = "0.3.4";
+        sha256 = "sha256-HVbUJdMg3/biSckPIKaO/wzybG701puty+nKA+CGJek=";
+      }
+      {
+        name = "es7-react-js-snippets";
+        publisher = "dsznajder";
+        version = "4.4.3";
+        sha256 = "sha256-QF950JhvVIathAygva3wwUOzBLjBm7HE3Sgcp7f20Pc=";
       }
     ];
   profiles.default.userSettings = {
