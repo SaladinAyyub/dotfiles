@@ -23,7 +23,6 @@ return {
         "css",
         "json",
         "go",
-        "svelte",
         "python",
         "odin",
         "zig",
