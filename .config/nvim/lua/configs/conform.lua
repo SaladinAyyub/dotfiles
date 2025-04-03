@@ -10,6 +10,7 @@ local options = {
     zig = { "zigfmt" },
     odin = { "odinfmt" },
     nix = { "nixfmt" },
+    java = { "google-java-format" },
   },
 
   format_on_save = {

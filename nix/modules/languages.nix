@@ -17,6 +17,8 @@
     golines
     goimports-reviser
     jdk
+    jdt-language-server
+    maven
     nodePackages.prettier
     ruff
     pyright

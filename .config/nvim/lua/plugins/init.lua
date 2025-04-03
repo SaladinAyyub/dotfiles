@@ -27,6 +27,7 @@ return {
         "odin",
         "zig",
         "toml",
+        "java",
       },
     },
   },
@@ -74,6 +75,8 @@ return {
   },
 
   { "williamboman/mason.nvim", enabled = false },
+
+  { "mfussenegger/nvim-jdtls" },
 
   {
     "olexsmir/gopher.nvim",
