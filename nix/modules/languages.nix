@@ -16,10 +16,9 @@
     gofumpt
     golines
     goimports-reviser
+    jdk
     nodePackages.prettier
     ruff
-    svelte-language-server
-    typescript-language-server
     pyright
     python3
     odin

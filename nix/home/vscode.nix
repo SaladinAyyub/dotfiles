@@ -21,6 +21,7 @@
       github.copilot-chat
       golang.go
       redhat.vscode-yaml
+      ziglang.vscode-zig
     ]
     ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       {
