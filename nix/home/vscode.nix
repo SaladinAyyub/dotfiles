@@ -22,6 +22,10 @@
       golang.go
       redhat.vscode-yaml
       ziglang.vscode-zig
+      redhat.java
+      vscjava.vscode-maven
+      vscjava.vscode-java-dependency
+      vscjava.vscode-java-debug
     ]
     ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       {

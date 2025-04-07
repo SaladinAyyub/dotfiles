@@ -180,6 +180,7 @@
     godot_4
     grim
     itch
+    jetbrains.idea-community-bin
     libnotify
     lutris
     mangohud
@@ -189,6 +190,7 @@
     papirus-icon-theme
     pavucontrol
     pfetch
+    prismlauncher
     protontricks
     ripgrep
     rofi-wayland
