@@ -176,8 +176,8 @@
     ente-auth
     fzf
     ghostty
+    gimp
     git
-    godot_4
     grim
     itch
     jetbrains.idea-community-bin

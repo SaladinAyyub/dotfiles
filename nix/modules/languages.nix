@@ -18,6 +18,7 @@
     goimports-reviser
     jdk
     jdt-language-server
+    kotlin
     maven
     nodePackages.prettier
     ruff
