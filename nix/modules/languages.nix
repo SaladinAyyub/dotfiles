@@ -21,9 +21,10 @@
     kotlin
     maven
     nodePackages.prettier
-    ruff
     pyright
     python3
+    ruff
+    rustup
     odin
     ols
     vscode-langservers-extracted

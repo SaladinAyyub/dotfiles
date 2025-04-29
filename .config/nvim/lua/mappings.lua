@@ -52,6 +52,12 @@ map("n", "<leader>dpr", function()
   require("dap-python").test_method()
 end, { desc = "Debug Python Test Method" })
 
+-- rust
+map("n", "<Leader>dt", "<cmd>lua vim.cmd('RustLsp testables')<CR>", { desc = "Debugger Rust testables" })
+map("n", "<leader>rcu", function()
+  require("crates").upgrade_all_crates()
+end, { desc = "update crates" })
+
 -- tmux navigation
 map("n", "<C-h>", "<cmd> TmuxNavigateLeft<CR>", { desc = "window left" })
 map("n", "<C-l>", "<cmd> TmuxNavigateRight<CR>", { desc = "window right" })
