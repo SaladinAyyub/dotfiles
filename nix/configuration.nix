@@ -198,6 +198,7 @@
     swww
     slurp
     tutanota-desktop
+    unrar
     onlyoffice-desktopeditors
     tmux
     vim
