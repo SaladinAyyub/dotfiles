@@ -205,6 +205,7 @@
     waybar
     wget
     wl-clipboard-rs
+    zapzap
     zoxide
   ];
 
