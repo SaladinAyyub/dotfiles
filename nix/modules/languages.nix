@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
+    bun
     go
     gnumake
     zig
@@ -28,5 +29,6 @@
     odin
     ols
     vscode-langservers-extracted
+    wails
   ];
 }
