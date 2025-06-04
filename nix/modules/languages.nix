@@ -2,6 +2,7 @@
 {
   environment.systemPackages = with pkgs; [
     bun
+    clang
     go
     gnumake
     zig
@@ -12,15 +13,16 @@
     taplo
     nil
     nixfmt-rfc-style
-    gopls
     delve
+    goimports-reviser
     gofumpt
     golines
-    goimports-reviser
+    gopls
     jdk
     jdt-language-server
     kotlin
     maven
+    mold
     nodePackages.prettier
     pyright
     python3

@@ -57,6 +57,7 @@ map("n", "<Leader>dt", "<cmd>lua vim.cmd('RustLsp testables')<CR>", { desc = "De
 map("n", "<leader>rcu", function()
   require("crates").upgrade_all_crates()
 end, { desc = "update crates" })
+map("n", "<Leader>rr", "<cmd> Cargo run<CR>", { desc = "cargo run" })
 
 -- tmux navigation
 map("n", "<C-h>", "<cmd> TmuxNavigateLeft<CR>", { desc = "window left" })
