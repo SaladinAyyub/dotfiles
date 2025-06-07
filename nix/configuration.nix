@@ -68,6 +68,10 @@
   # Enable XWayland support in COSMIC
   services.desktopManager.cosmic.xwayland.enable = true;
 
+  services.postgresql = {
+    enable = true;
+  };
+
   # Configure keymap in X11
   services.xserver.xkb = {
     layout = "us";
@@ -188,11 +192,11 @@
     lutris
     mangohud
     neovim
+    neofetch
     networkmanagerapplet
     oh-my-posh
     papirus-icon-theme
     pavucontrol
-    pfetch
     prismlauncher
     protontricks
     ripgrep

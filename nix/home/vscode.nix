@@ -20,6 +20,9 @@
       github.copilot
       github.copilot-chat
       golang.go
+      tamasfe.even-better-toml
+      rust-lang.rust-analyzer
+      fill-labs.dependi
       redhat.vscode-yaml
       ziglang.vscode-zig
       redhat.java

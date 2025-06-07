@@ -7,6 +7,7 @@ local options = {
     json = { "prettier" },
     go = { "gofumpt", "goimports-reviser", "golines" },
     python = { "ruff_format", "ruff_fix", "ruff_organize_imports" },
+    rust = { "rustfmt" },
     zig = { "zigfmt" },
     odin = { "odinfmt" },
     nix = { "nixfmt" },

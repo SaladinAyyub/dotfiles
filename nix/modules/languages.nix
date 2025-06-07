@@ -2,6 +2,7 @@
 {
   environment.systemPackages = with pkgs; [
     bun
+    cargo-watch
     clang
     go
     gnumake
@@ -24,6 +25,7 @@
     maven
     mold
     nodePackages.prettier
+    pgadmin4-desktopmode
     pyright
     python3
     ruff
