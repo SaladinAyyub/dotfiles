@@ -185,6 +185,8 @@
     gimp
     git
     grim
+    httpie
+    httpie-desktop
     itch
     jetbrains.idea-community-bin
     libnotify
