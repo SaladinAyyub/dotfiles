@@ -167,8 +167,6 @@
   hardware.graphics.extraPackages = with pkgs; [ mesa.opencl ];
   environment.variables = {
     RUSTICL_ENABLE = "radeonsi";
-    CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_LINKER = "clang";
-    RUSTFLAGS = "-C link-arg=-fuse-ld=mold";
   };
 
   # List packages installed in system profile. To search, run:
@@ -197,8 +195,10 @@
     neofetch
     networkmanagerapplet
     oh-my-posh
+    openssl
     papirus-icon-theme
     pavucontrol
+    pkg-config
     prismlauncher
     protontricks
     ripgrep

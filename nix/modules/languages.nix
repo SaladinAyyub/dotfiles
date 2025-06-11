@@ -30,6 +30,7 @@
     python3
     ruff
     rustup
+    trunk
     odin
     ols
     vscode-langservers-extracted
