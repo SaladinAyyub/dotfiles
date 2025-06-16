@@ -178,6 +178,7 @@
     discord
     dunst
     ente-auth
+    ffmpeg
     fzf
     ghostty
     gimp
