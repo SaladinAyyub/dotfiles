@@ -276,6 +276,7 @@
     libclang.lib
     libdbusmenu
     libdrm
+    libgbm
     libgcrypt
     libgpg-error
     libidn
