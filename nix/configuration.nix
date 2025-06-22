@@ -257,6 +257,7 @@
     fuse
     fuse3
     gdk-pixbuf
+    gh
     glew110
     glib
     gmp

@@ -22,50 +22,23 @@
       golang.go
       tamasfe.even-better-toml
       rust-lang.rust-analyzer
+      ms-vscode.cpptools
       fill-labs.dependi
       redhat.vscode-yaml
       ziglang.vscode-zig
-      redhat.java
-      vscjava.vscode-maven
-      vscjava.vscode-java-dependency
-      vscjava.vscode-java-debug
     ]
     ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
       {
-        name = "vscode-expo-tools";
-        publisher = "expo";
-        version = "1.6.0";
-        sha256 = "sha256-on+QlNwHQzmBBDYkRWJ2hVMuW+xLhJHx7Og6tuR2nMo=";
-      }
-      {
-        name = "vscode-react-native";
-        publisher = "msjsdiag";
-        version = "1.13.0";
-        sha256 = "sha256-zryzoO9sb1+Kszwup5EhnN/YDmAPz7TOQW9I/K28Fmg=";
-      }
-      {
         name = "symbols";
         publisher = "miguelsolorio";
-        version = "0.0.22";
-        sha256 = "sha256-LZYyz7NxOkLuSIPMOPeUPQIsfq4vI+3NfN5MklQlxEw=";
+        version = "0.0.24";
+        sha256 = "sha256-yEE6G2e/a2/DcKq1+Vtv0YIAtWZG5LyXfZ6cbheRV1g=";
       }
       {
         name = "fluent-icons";
         publisher = "miguelsolorio";
         version = "0.0.19";
         sha256 = "sha256-OfPSh0SapT+YOfi0cz3ep8hEhgCTHpjs1FfmgAyjN58=";
-      }
-      {
-        name = "five-server";
-        publisher = "yandeu";
-        version = "0.3.4";
-        sha256 = "sha256-HVbUJdMg3/biSckPIKaO/wzybG701puty+nKA+CGJek=";
-      }
-      {
-        name = "es7-react-js-snippets";
-        publisher = "dsznajder";
-        version = "4.4.3";
-        sha256 = "sha256-QF950JhvVIathAygva3wwUOzBLjBm7HE3Sgcp7f20Pc=";
       }
     ];
   profiles.default.userSettings = {

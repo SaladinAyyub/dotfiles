@@ -25,7 +25,6 @@
     maven
     mold
     nodePackages.prettier
-    pgadmin4-desktopmode
     pyright
     python3
     ruff
