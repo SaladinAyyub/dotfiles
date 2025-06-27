@@ -145,6 +145,11 @@ return {
               env = {
                 api_key = "GEMINI_API_KEY",
               },
+              schema = {
+                model = {
+                  default = "gemini-2.5-flash",
+                },
+              },
             })
           end,
         },
