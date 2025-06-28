@@ -3,7 +3,7 @@
   environment.systemPackages = with pkgs; [
     bun
     cargo-watch
-    clang
+    vscode-extensions.vadimcn.vscode-lldb
     go
     gnumake
     zig

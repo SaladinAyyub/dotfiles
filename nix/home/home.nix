@@ -20,7 +20,6 @@
   home.packages = with pkgs; [
     protonup
     bibata-cursors
-    jetbrains-toolbox
   ];
 
   xdg.enable = true;
