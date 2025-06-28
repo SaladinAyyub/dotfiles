@@ -76,10 +76,6 @@ return {
     dependencies = "mfussenegger/nvim-dap",
   },
 
-  { "williamboman/mason.nvim", enabled = false },
-
-  { "mfussenegger/nvim-jdtls" },
-
   {
     "olexsmir/gopher.nvim",
     ft = "go",

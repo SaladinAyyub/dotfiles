@@ -3,36 +3,19 @@
   environment.systemPackages = with pkgs; [
     bun
     cargo-watch
-    vscode-extensions.vadimcn.vscode-lldb
+    cargo-cache
     go
+    gcc
     gnumake
     zig
-    zls
     nodejs
-    lua-language-server
-    stylua
-    taplo
     nil
-    nixfmt-rfc-style
-    delve
-    goimports-reviser
-    gofumpt
-    golines
-    gopls
     jdk
-    jdt-language-server
     kotlin
-    maven
     mold
-    nodePackages.prettier
-    pyright
     python3
-    ruff
     rustup
     trunk
     odin
-    ols
-    vscode-langservers-extracted
-    wails
   ];
 }

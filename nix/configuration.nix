@@ -210,6 +210,7 @@
     steamguard-cli
     tutanota-desktop
     unrar
+    unzip
     onlyoffice-desktopeditors
     tmux
     vim
