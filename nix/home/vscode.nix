@@ -6,48 +6,40 @@
   enable = true;
   package = pkgs.vscode.fhs;
   mutableExtensionsDir = false;
-  profiles.default.extensions =
-    with pkgs.vscode-extensions;
-    [
-      vscodevim.vim
-      danielgavin.ols
-      ms-python.python
-      charliermarsh.ruff
-      enkia.tokyo-night
-      esbenp.prettier-vscode
-      jnoortheen.nix-ide
-      mkhl.direnv
-      github.copilot
-      github.copilot-chat
-      golang.go
-      tamasfe.even-better-toml
-      rust-lang.rust-analyzer
-      ms-vscode.cpptools
-      fill-labs.dependi
-      redhat.vscode-yaml
-      ziglang.vscode-zig
-    ]
-    ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
-      {
-        name = "symbols";
-        publisher = "miguelsolorio";
-        version = "0.0.24";
-        sha256 = "sha256-yEE6G2e/a2/DcKq1+Vtv0YIAtWZG5LyXfZ6cbheRV1g=";
-      }
-      {
-        name = "fluent-icons";
-        publisher = "miguelsolorio";
-        version = "0.0.19";
-        sha256 = "sha256-OfPSh0SapT+YOfi0cz3ep8hEhgCTHpjs1FfmgAyjN58=";
-      }
-    ];
+  profiles.default.extensions = with pkgs.vscode-extensions; [
+    vscodevim.vim
+    danielgavin.ols
+    ms-python.python
+    charliermarsh.ruff
+    enkia.tokyo-night
+    esbenp.prettier-vscode
+    jnoortheen.nix-ide
+    mkhl.direnv
+    github.copilot
+    github.copilot-chat
+    golang.go
+    tamasfe.even-better-toml
+    rust-lang.rust-analyzer
+    ms-vscode.cpptools
+    fill-labs.dependi
+    redhat.vscode-yaml
+    ziglang.vscode-zig
+    pkief.material-icon-theme
+  ];
   profiles.default.userSettings = {
     "workbench.startupEditor" = "none";
+    "window.customTitleBarVisibility" = "never";
     "window.titleBarStyle" = "custom";
     "window.commandCenter" = true;
     "workbench.colorTheme" = "Tokyo Night";
-    "workbench.productIconTheme" = "fluent-icons";
-    "workbench.iconTheme" = "symbols";
+    "workbench.iconTheme" = "material-icon-theme";
+    "material-icon-theme.hidesExplorerArrows" = true;
+    "workbench.tree.enableStickyScroll" = false;
+    "workbench.tree.renderIndentGuides" = "none";
+    "workbench.tree.indent" = 8;
+    "explorer.compactFolders" = false;
+    "explorer.confirmDragAndDrop" = false;
+    "explorer.confirmDelete" = false;
     "extensions.ignoreRecommendations" = true;
     "files.autoSave" = "off";
     "editor.formatOnSave" = true;
@@ -56,6 +48,10 @@
     "editor.minimap.enabled" = false;
     "breadcrumbs.enabled" = false;
     "workbench.activityBar.location" = "hidden";
+    "workbench.editor.showTabs" = "single";
+    "workbench.statusBar.visible" = true;
+    "workbench.tips.enabled" = false;
+    "workbench.sideBar.location" = "right";
     "update.mode" = "none";
     "update.showReleaseNotes" = false;
     "zenMode.hideLineNumbers" = false;
@@ -64,7 +60,7 @@
     "vim.hlsearch" = true;
     "editor.fontFamily" = "JetBrainsMono Nerd Font";
     "editor.fontSize" = 16;
-    "window.zoomLevel" = 1.0;
+    "window.zoomLevel" = 1.5;
     "vim.normalModeKeyBindingsNonRecursive" = [
       {
         "before" = [ "<S-tab>" ];
@@ -222,6 +218,7 @@
     };
 
     "nix.enableLanguageServer" = true;
+    "zig.zls.enabled" = "on";
     "nix.serverPath" = "nil";
     "nix.serverSettings" = {
       "nil" = {
