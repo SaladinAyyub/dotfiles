@@ -216,7 +216,7 @@
     vim
     waybar
     wget
-    wl-clipboard-rs
+    wl-clipboard
     zapzap
     zoxide
   ];
