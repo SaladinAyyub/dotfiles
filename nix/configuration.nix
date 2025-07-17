@@ -184,7 +184,7 @@
     fzf
     gemini-cli
     ghostty
-    gimp
+    gimp3
     git
     grim
     httpie
@@ -202,7 +202,6 @@
     papirus-icon-theme
     pavucontrol
     pkg-config
-    prismlauncher
     protontricks
     ripgrep
     rofi-wayland

@@ -10,8 +10,6 @@
     zig
     nodejs
     nil
-    jdk
-    kotlin
     mold
     python3
     rustup
