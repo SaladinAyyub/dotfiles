@@ -7,6 +7,7 @@
     go
     gcc
     gnumake
+    lua
     zig
     nodejs
     nil
