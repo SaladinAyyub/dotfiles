@@ -60,7 +60,7 @@
     "vim.hlsearch" = true;
     "editor.fontFamily" = "JetBrainsMono Nerd Font";
     "editor.fontSize" = 16;
-    "window.zoomLevel" = 1.5;
+    "window.zoomLevel" = 1.0;
     "vim.normalModeKeyBindingsNonRecursive" = [
       {
         "before" = [ "<S-tab>" ];
