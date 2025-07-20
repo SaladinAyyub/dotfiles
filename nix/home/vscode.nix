@@ -35,11 +35,11 @@
     "workbench.iconTheme" = "material-icon-theme";
     "material-icon-theme.hidesExplorerArrows" = true;
     "workbench.tree.enableStickyScroll" = false;
-    "workbench.tree.renderIndentGuides" = "none";
     "workbench.tree.indent" = 8;
     "explorer.compactFolders" = false;
     "explorer.confirmDragAndDrop" = false;
     "explorer.confirmDelete" = false;
+    "explorer.decoration.badges" = false;
     "extensions.ignoreRecommendations" = true;
     "files.autoSave" = "off";
     "editor.formatOnSave" = true;
@@ -51,7 +51,6 @@
     "workbench.editor.showTabs" = "single";
     "workbench.statusBar.visible" = true;
     "workbench.tips.enabled" = false;
-    "workbench.sideBar.location" = "right";
     "update.mode" = "none";
     "update.showReleaseNotes" = false;
     "zenMode.hideLineNumbers" = false;
@@ -60,7 +59,9 @@
     "vim.hlsearch" = true;
     "editor.fontFamily" = "JetBrainsMono Nerd Font";
     "editor.fontSize" = 16;
-    "window.zoomLevel" = 1.0;
+    "editor.fontLigatures" = true;
+    "editor.cursorBlinking" = "solid";
+    "window.zoomLevel" = 1.25;
     "vim.normalModeKeyBindingsNonRecursive" = [
       {
         "before" = [ "<S-tab>" ];

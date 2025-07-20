@@ -11,6 +11,7 @@
     zig
     nodejs
     nil
+    nixfmt-rfc-style
     mold
     python3
     rustup
