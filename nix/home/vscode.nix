@@ -39,7 +39,7 @@
     "explorer.compactFolders" = false;
     "explorer.confirmDragAndDrop" = false;
     "explorer.confirmDelete" = false;
-    "explorer.decoration.badges" = false;
+    "explorer.decorations.badges" = false;
     "extensions.ignoreRecommendations" = true;
     "files.autoSave" = "off";
     "editor.formatOnSave" = true;
