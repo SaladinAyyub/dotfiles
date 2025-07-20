@@ -221,6 +221,13 @@
     zoxide
   ];
 
+  programs.steam.package = pkgs.steam.override {
+    extraPkgs =
+      pkgs: with pkgs; [
+        nss
+      ];
+  };
+
   programs.nix-ld.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are

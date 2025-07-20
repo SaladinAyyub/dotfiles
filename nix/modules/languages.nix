@@ -5,6 +5,10 @@
     cargo-watch
     cargo-cache
     clang
+    clang-tools
+    cmake
+    bear
+    gdb
     go
     gcc
     gnumake
