@@ -22,6 +22,7 @@
     rust-lang.rust-analyzer
     ms-vscode.cpptools
     ms-vscode.cmake-tools
+    vadimcn.vscode-lldb
     fill-labs.dependi
     redhat.vscode-yaml
     ziglang.vscode-zig

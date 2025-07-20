@@ -8,13 +8,14 @@
     clang-tools
     cmake
     bear
-    gdb
     go
     gcc
+    gdb
     gnumake
     lua
     zig
     nodejs
+    ninja
     nil
     nixfmt-rfc-style
     mold
