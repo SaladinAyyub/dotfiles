@@ -4,6 +4,7 @@
     bun
     cargo-watch
     cargo-cache
+    clang
     go
     gcc
     gnumake
