@@ -12,6 +12,7 @@
     gcc
     gdb
     gnumake
+    jdk
     lua
     zig
     nodejs

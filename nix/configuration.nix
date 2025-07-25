@@ -204,6 +204,7 @@
     pavucontrol
     pkg-config
     protontricks
+    prismlauncher
     ripgrep
     rofi-wayland
     swww
@@ -289,6 +290,7 @@
     libpulseaudio
     librsvg
     libsamplerate
+    libsecret
     libthai
     libtheora
     libtiff
