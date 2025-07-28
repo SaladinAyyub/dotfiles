@@ -195,6 +195,7 @@
     loupe
     lutris
     mangohud
+    mesa-demos
     neovim
     neofetch
     networkmanagerapplet
