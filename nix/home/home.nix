@@ -37,17 +37,6 @@
     settings."org/gnome/desktop/interface".color-scheme = "prefer-dark";
   };
 
-  gtk = {
-    enable = true;
-    gtk3.extraConfig = {
-      gtk-application-prefer-dark-theme = true;
-    };
-    cursorTheme = {
-      name = "Bibata-Modern-Classic";
-      package = pkgs.bibata-cursors;
-    };
-  };
-
   programs = {
     alacritty = import ./alacritty.nix { inherit config pkgs; };
     chromium = import ./chromium.nix { inherit pkgs; };
