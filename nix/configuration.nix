@@ -134,6 +134,7 @@
     extraPortals = [
       pkgs.xdg-desktop-portal-gnome # For both
       pkgs.xdg-desktop-portal-hyprland # For Hyprland
+      pkgs.kdePackages.xdg-desktop-portal-kde # For plasma
     ];
     config.common.default = [
       "gtk"
@@ -174,6 +175,7 @@
     clinfo
     direnv
     discord
+    legcord
     dunst
     ente-auth
     fd
