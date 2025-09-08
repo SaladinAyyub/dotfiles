@@ -9,7 +9,6 @@
   profiles.default.extensions = with pkgs.vscode-extensions; [
     vscodevim.vim
     danielgavin.ols
-    ms-python.python
     charliermarsh.ruff
     enkia.tokyo-night
     esbenp.prettier-vscode

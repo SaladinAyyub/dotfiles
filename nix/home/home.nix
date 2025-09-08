@@ -20,6 +20,7 @@
   home.packages = with pkgs; [
     protonup
     bibata-cursors
+    morewaita-icon-theme
   ];
 
   xdg.enable = true;
@@ -34,7 +35,21 @@
 
   dconf = {
     enable = true;
-    settings."org/gnome/desktop/interface".color-scheme = "prefer-dark";
+    settings."org/gnome/desktop/interface" = {
+      color-scheme = "prefer-dark";
+      icon-theme = "MoreWaita";
+    };
+  };
+
+  gtk = {
+    enable = true;
+    gtk3.extraConfig = {
+      gtk-application-prefer-dark-theme = true;
+    };
+    cursorTheme = {
+      name = "Bibata-Modern-Classic";
+      package = pkgs.bibata-cursors;
+    };
   };
 
   programs = {
