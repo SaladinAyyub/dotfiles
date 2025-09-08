@@ -61,6 +61,7 @@ alias ls='ls --color'
 alias c='clear'
 alias tm='tmux new-session -A -s main'
 alias nv='nvim'
+alias unreal='steam-run ~/Apps/Linux_Unreal_Engine_5.5.3/Engine/Binaries/Linux/UnrealEditor'
 
 # Export PATHs
 export PATH=$PATH:$HOME/go/bin

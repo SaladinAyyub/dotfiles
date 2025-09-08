@@ -5,7 +5,6 @@
 {
   enable = true;
   package = pkgs.vscode.fhs;
-  mutableExtensionsDir = false;
   profiles.default.extensions = with pkgs.vscode-extensions; [
     vscodevim.vim
     danielgavin.ols

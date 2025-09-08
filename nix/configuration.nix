@@ -126,8 +126,10 @@
     extraPortals = [
       pkgs.xdg-desktop-portal-gnome # For both
       pkgs.xdg-desktop-portal-hyprland # For Hyprland
+      pkgs.xdg-desktop-portal-gtk # For gtk
     ];
     config.common.default = [
+      "gnome"
       "gtk"
       "hyprland"
     ];
@@ -153,6 +155,8 @@
   # Enable Gnome desktop
   services.displayManager.gdm.enable = true;
   services.desktopManager.gnome.enable = true;
+
+  services.udev.packages = [ pkgs.gnome-settings-daemon ];
 
   programs.gamemode.enable = true;
 
@@ -181,6 +185,7 @@
     ghostty
     gimp3
     git
+    gnomeExtensions.appindicator
     godot
     grim
     httpie
