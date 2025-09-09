@@ -8,7 +8,6 @@
   settings = {
     theme = "tokyonight";
     font-size = 14;
-    window-decoration = false;
     gtk-titlebar = false;
     window-width = 140;
     window-height = 40;
