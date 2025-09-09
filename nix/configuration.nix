@@ -175,7 +175,6 @@
     clinfo
     direnv
     discord
-    legcord
     dunst
     ente-auth
     fd
