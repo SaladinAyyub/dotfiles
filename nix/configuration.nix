@@ -191,7 +191,6 @@
     httpie
     httpie-desktop
     itch
-    jetbrains-toolbox
     libnotify
     loupe
     lutris
