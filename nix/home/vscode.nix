@@ -14,7 +14,7 @@
     mkhl.direnv
     github.copilot
     github.copilot-chat
-    golang.go
+    ms-python.python
     tamasfe.even-better-toml
     rust-lang.rust-analyzer
     ms-vscode.cpptools
