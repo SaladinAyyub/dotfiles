@@ -219,6 +219,7 @@
 
     "nix.enableLanguageServer" = true;
     "zig.zls.enabled" = "on";
+    "cmake.useCmakePresets" = "always";
     "nix.serverPath" = "nil";
     "nix.serverSettings" = {
       "nil" = {

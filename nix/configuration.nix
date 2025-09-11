@@ -180,7 +180,7 @@
     fd
     ffmpeg
     fzf
-    gemini-cli
+    gemini-cli-bin
     ghostty
     gimp3
     git
