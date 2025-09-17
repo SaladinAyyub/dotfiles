@@ -175,6 +175,7 @@
     clinfo
     direnv
     discord
+    deluge
     dunst
     ente-auth
     fd
@@ -189,6 +190,7 @@
     grim
     httpie
     httpie-desktop
+    jq
     itch
     libnotify
     loupe
