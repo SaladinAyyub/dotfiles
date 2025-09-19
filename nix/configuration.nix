@@ -100,6 +100,7 @@
     extraGroups = [
       "networkmanager"
       "wheel"
+      "adbusers"
     ];
     shell = pkgs.zsh;
     openssh.authorizedKeys.keys = [
@@ -138,6 +139,8 @@
   # Install firefox.
   programs.firefox.enable = true;
 
+  programs.adb.enable = true;
+
   programs.steam = {
     enable = true;
     extraCompatPackages = [ pkgs.proton-ge-bin ];
@@ -171,6 +174,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     appimage-run
+    android-studio
     blender-hip
     clinfo
     direnv

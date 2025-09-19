@@ -8,6 +8,7 @@
     clang-tools
     cmake
     bear
+    flutter
     go
     gcc
     gdb

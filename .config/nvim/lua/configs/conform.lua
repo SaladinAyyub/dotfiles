@@ -11,6 +11,7 @@ local options = {
     zig = { "zigfmt" },
     odin = { "odinfmt" },
     nix = { "nixfmt" },
+    dart = { "dart_format" },
   },
 
   format_on_save = {
