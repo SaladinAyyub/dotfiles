@@ -30,6 +30,7 @@ return {
         "odin",
         "zig",
         "toml",
+        "dart",
       },
     },
   },
@@ -117,6 +118,19 @@ return {
         server = {
           on_attach = require("nvchad.configs.lspconfig").on_attach,
         },
+      }
+    end,
+  },
+
+  {
+    "nvim-flutter/flutter-tools.nvim",
+    lazy = false,
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+    config = function()
+      require("flutter-tools").setup {
+        fvm = true,
       }
     end,
   },

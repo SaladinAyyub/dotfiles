@@ -59,6 +59,11 @@ map("n", "<leader>rcu", function()
 end, { desc = "update crates" })
 map("n", "<Leader>rr", "<cmd> Cargo run<CR>", { desc = "cargo run" })
 
+--flutter
+map("n", "<leader>dfe", "<cmd>FlutterEmulators<CR>", { desc = "Debug Open Flutter Emulator" })
+map("n", "<leader>dfr", "<cmd>FlutterRun<CR>", { desc = "Debug Flutter Run" })
+map("n", "<leader>dfl", "<cmd>FlutterRestart<CR>", { desc = "Debug Flutter Restart" })
+
 -- tmux navigation
 map("n", "<C-h>", "<cmd> TmuxNavigateLeft<CR>", { desc = "window left" })
 map("n", "<C-l>", "<cmd> TmuxNavigateRight<CR>", { desc = "window right" })
