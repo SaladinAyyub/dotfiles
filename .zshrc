@@ -62,6 +62,7 @@ alias c='clear'
 alias tm='tmux new-session -A -s main'
 alias nv='nvim'
 alias unreal='steam-run ~/Apps/Linux_Unreal_Engine_5.5.3/Engine/Binaries/Linux/UnrealEditor'
+alias android-emulator='emulator -avd phone -skin 720x1280 -noaudio -no-snapshot-load -no-snapshot'
 
 # Export PATHs
 export PATH=$PATH:$HOME/go/bin
@@ -69,6 +70,7 @@ export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/.npm-global/bin
 
 export ANDROID_AVD_HOME=$HOME/.android/avd
+export PATH="$HOME/fvm/default/bin:$PATH"
 
 # Load API Keys
 source ~/.api_keys
@@ -80,3 +82,9 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /home/saladin/.config/.dart-cli-completion/zsh-config.zsh ]] && . /home/saladin/.config/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+
