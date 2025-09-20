@@ -68,10 +68,6 @@ export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/.npm-global/bin
 
-export ANDROID_SDK_ROOT=$HOME/Android/Sdk
-export PATH=$ANDROID_SDK_ROOT/emulator:$ANDROID_SDK_ROOT/platform-tools:$ANDROID_SDK_ROOT/cmdline-tools/latest/bin:$PATH
-export ANDROID_AVD_HOME=$HOME/.config/.android/avd
-
 # Load API Keys
 source ~/.api_keys
 
