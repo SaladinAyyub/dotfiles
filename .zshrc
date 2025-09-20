@@ -68,6 +68,8 @@ export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/.npm-global/bin
 
+export ANDROID_AVD_HOME=$HOME/.android/avd
+
 # Load API Keys
 source ~/.api_keys
 
