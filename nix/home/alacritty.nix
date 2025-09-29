@@ -13,11 +13,15 @@
         y = 8;
       };
       decorations = "full";
-      opacity = 1;
+      opacity = 0.8;
       startup_mode = "Windowed";
       title = "Alacritty";
       dynamic_title = true;
       decorations_theme_variant = "None";
+      dimensions = {
+        columns = 140;
+        lines = 40;
+      };
     };
 
     general = {
@@ -36,7 +40,7 @@
         };
       in
       {
-        size = 15;
+        size = 14;
         normal = jetbrainsMono "Regular";
         bold = jetbrainsMono "Bold";
         italic = jetbrainsMono "Italic";

@@ -126,13 +126,9 @@
   xdg.portal = {
     enable = true;
     extraPortals = [
-      pkgs.xdg-desktop-portal-gnome # For both
       pkgs.xdg-desktop-portal-hyprland # For Hyprland
-      pkgs.xdg-desktop-portal-gtk # For gtk
     ];
     config.common.default = [
-      "gnome"
-      "gtk"
       "hyprland"
     ];
   };
@@ -212,7 +208,7 @@
     protontricks
     prismlauncher
     ripgrep
-    rofi-wayland
+    rofi
     swww
     slurp
     steamguard-cli
