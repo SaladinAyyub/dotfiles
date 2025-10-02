@@ -79,13 +79,10 @@ tooltip {
   padding-left: 3px;
   padding-right: 3px;
   margin-right: 0px;
-  color: @wb-color;
   animation: tb_normal 20s ease-in-out 1;
 }
 
 #taskbar button.active {
-  background: @wb-act-bg;
-  color: @wb-act-color;
   margin-left: 3px;
   padding-left: 12px;
   padding-right: 12px;
@@ -96,8 +93,6 @@ tooltip {
 }
 
 #taskbar button:hover {
-  background: @wb-hvr-bg;
-  color: @wb-hvr-color;
   animation: tb_hover 20s ease-in-out 1;
   transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
 }
@@ -166,7 +161,6 @@ tooltip {
 
 #idle_inhibitor {
   color: #24966e;
-  background: @bar-bg;
   opacity: 1;
   margin: 4px 0px 4px 0px;
   padding-left: 4px;
@@ -192,7 +186,7 @@ tooltip {
   opacity: 1;
   margin: 0px 0px 0px 0px;
   padding-left: 3px;
-  padding-right: 6px;
+  padding-right: 10px;
 }
 #cpu {
   font-weight: normal;
@@ -235,7 +229,7 @@ tooltip {
   color: #a1bdce;
   font-weight: normal;
   font-size: 19px;
-  padding-right: 3px;
+  padding-right: 2px;
   padding-left: 4px;
 }
 #custom-notifications,
