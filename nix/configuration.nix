@@ -213,6 +213,7 @@
     slurp
     steamguard-cli
     tutanota-desktop
+    teams-for-linux
     unrar
     unzip
     onlyoffice-desktopeditors
