@@ -6,7 +6,7 @@
   enable = true;
   enableZshIntegration = true;
   settings = {
-    theme = "tokyonight";
+    theme = "TokyoNight";
     font-size = 14;
     gtk-titlebar = false;
     window-width = 140;

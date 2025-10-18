@@ -17,10 +17,12 @@
     ms-python.python
     tamasfe.even-better-toml
     rust-lang.rust-analyzer
-    ms-vscode.cpptools
-    ms-vscode.cmake-tools
     vadimcn.vscode-lldb
     fill-labs.dependi
+    visualstudiotoolsforunity.vstuc
+    ms-dotnettools.csharp
+    ms-dotnettools.csdevkit
+    ms-dotnettools.vscode-dotnet-runtime
     redhat.vscode-yaml
     ziglang.vscode-zig
     pkief.material-icon-theme
