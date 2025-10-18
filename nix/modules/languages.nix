@@ -4,10 +4,9 @@
     bun
     cargo-watch
     cargo-cache
-    clang
-    clang-tools
     cmake
     bear
+    dotnetCorePackages.dotnet_9.sdk
     fvm
     go
     gcc
@@ -21,6 +20,7 @@
     nixfmt-rfc-style
     mold
     python3
+    pocketbase
     rustup
     trunk
     odin

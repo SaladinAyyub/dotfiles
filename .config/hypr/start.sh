@@ -9,3 +9,5 @@ nm-applet --indicator &
 waybar &
 
 dunst
+
+xwayland-satellite :1

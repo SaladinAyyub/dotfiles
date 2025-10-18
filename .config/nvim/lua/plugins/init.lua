@@ -31,6 +31,7 @@ return {
         "zig",
         "toml",
         "dart",
+        "c_sharp",
       },
     },
   },
@@ -140,6 +141,14 @@ return {
     ft = { "toml" },
     config = function()
       require("crates").setup()
+    end,
+  },
+
+  {
+    "apyra/nvim-unity-sync",
+    lazy = false,
+    config = function()
+      require("unity.plugin").setup()
     end,
   },
 

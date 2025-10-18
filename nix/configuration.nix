@@ -214,6 +214,8 @@
     steamguard-cli
     tutanota-desktop
     teams-for-linux
+    unityhub
+    xwayland-satellite
     unrar
     unzip
     onlyoffice-desktopeditors
