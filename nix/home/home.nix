@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -21,6 +21,7 @@
     protonup
     bibata-cursors
     morewaita-icon-theme
+    inputs.zen-browser.packages.x86_64-linux.default
   ];
 
   xdg.enable = true;

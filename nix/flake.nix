@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    zen-browser.url = "github:0xc000022070/zen-browser-flake";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -18,11 +19,12 @@
       self,
       nixpkgs,
       alacritty-theme,
+      zen-browser,
       ...
     }@inputs:
     {
       nixosConfigurations.default = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs; };
+        specialArgs = { inherit inputs; zen-browser = inputs.zen-browser; };
         modules = [
           ./configuration.nix
           inputs.home-manager.nixosModules.default
