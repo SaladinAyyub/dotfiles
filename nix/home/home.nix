@@ -1,4 +1,9 @@
-{ config, pkgs, inputs, ... }:
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
 
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -55,7 +60,6 @@
 
   programs = {
     alacritty = import ./alacritty.nix { inherit config pkgs; };
-    chromium = import ./chromium.nix { inherit pkgs; };
     fzf = import ./fzf.nix { inherit pkgs; };
     ghostty = import ./ghostty.nix { inherit pkgs; };
     git = import ./git.nix { inherit config pkgs; };

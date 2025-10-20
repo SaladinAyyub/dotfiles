@@ -133,9 +133,6 @@
     ];
   };
 
-  # Install firefox.
-  programs.firefox.enable = true;
-
   programs.adb.enable = true;
 
   programs.steam = {
