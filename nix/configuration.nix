@@ -185,6 +185,7 @@
     gnomeExtensions.appindicator
     godot
     grim
+    gh
     httpie
     httpie-desktop
     jq
