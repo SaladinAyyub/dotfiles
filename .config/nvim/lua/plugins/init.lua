@@ -37,11 +37,15 @@ return {
   },
 
   {
-    "ahmedkhalf/project.nvim",
-    lazy = false,
-    config = function()
-      require("project_nvim").setup {}
-    end,
+    "DrKJeff16/project.nvim",
+    version = false,
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope.nvim",
+      "ibhagwan/fzf-lua",
+    },
+    ---@module 'project'
+    opts = {},
   },
 
   {
@@ -79,6 +83,11 @@ return {
       "mfussenegger/nvim-dap",
     },
     opts = {
+      ensure_installed = {
+        "debugpy",
+        "codelldb",
+        "delve",
+      },
       handlers = {},
     },
   },
@@ -95,7 +104,10 @@ return {
   {
     "mfussenegger/nvim-dap-python",
     ft = "python",
-    dependencies = "mfussenegger/nvim-dap",
+    opts = {},
+    config = function(_, opts)
+      require("dap-python").setup(opts)
+    end,
   },
 
   {

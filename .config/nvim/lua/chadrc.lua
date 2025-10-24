@@ -19,8 +19,4 @@ M.ui = {
   },
 }
 
-M.mason = {
-  pkgs = { "delve", "codelldb" },
-}
-
 return M
