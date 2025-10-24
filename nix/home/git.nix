@@ -6,21 +6,15 @@
 {
   enable = true;
   lfs.enable = true;
-  userName = "Saladin";
-  userEmail = "dev@saladin.pro";
 
-  extraConfig = {
+  settings = {
+    user.name = "Saladin";
+    user.email = "dev@saladin.pro";
     pull = {
       rebase = true;
     };
     init = {
       defaultBranch = "main";
     };
-
-    # url = {
-    #   "git@github.com:" = {
-    #     insteadOf = "https://github.com/";
-    #   };
-    # };
   };
 }
