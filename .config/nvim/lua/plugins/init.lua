@@ -37,15 +37,11 @@ return {
   },
 
   {
-    "DrKJeff16/project.nvim",
-    version = false,
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-      "nvim-telescope/telescope.nvim",
-      "ibhagwan/fzf-lua",
-    },
-    ---@module 'project'
-    opts = {},
+    "ahmedkhalf/project.nvim",
+    config = function()
+      require("project_nvim").setup()
+    end,
+    ft = "cs",
   },
 
   {
@@ -166,10 +162,10 @@ return {
 
   {
     "apyra/nvim-unity-sync",
-    lazy = false,
     config = function()
       require("unity.plugin").setup()
     end,
+    ft = "cs",
   },
 
   {
