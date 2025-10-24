@@ -4,6 +4,7 @@
 }:
 {
   enable = true;
+  package = pkgs.vscode-fhs;
   profiles.default.extensions = with pkgs.vscode-extensions; [
     vscodevim.vim
     danielgavin.ols
@@ -34,13 +35,11 @@
     "window.commandCenter" = true;
     "workbench.colorTheme" = "Tokyo Night";
     "workbench.iconTheme" = "material-icon-theme";
-    "material-icon-theme.hidesExplorerArrows" = true;
     "workbench.tree.enableStickyScroll" = false;
     "workbench.tree.indent" = 8;
     "explorer.compactFolders" = false;
     "explorer.confirmDragAndDrop" = false;
     "explorer.confirmDelete" = false;
-    "explorer.decorations.badges" = false;
     "extensions.ignoreRecommendations" = true;
     "files.autoSave" = "off";
     "editor.formatOnSave" = true;
