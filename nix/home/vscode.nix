@@ -23,7 +23,6 @@
     visualstudiotoolsforunity.vstuc
     ms-dotnettools.csharp
     ms-dotnettools.csdevkit
-    ms-dotnettools.vscode-dotnet-runtime
     redhat.vscode-yaml
     ziglang.vscode-zig
     pkief.material-icon-theme
@@ -35,7 +34,9 @@
     "window.commandCenter" = true;
     "workbench.colorTheme" = "Tokyo Night";
     "workbench.iconTheme" = "material-icon-theme";
+    "material-icon-theme.hidesExplorerArrows" = true;
     "workbench.tree.enableStickyScroll" = false;
+    "workbench.tree.renderIndentGuides" = false;
     "workbench.tree.indent" = 8;
     "explorer.compactFolders" = false;
     "explorer.confirmDragAndDrop" = false;
