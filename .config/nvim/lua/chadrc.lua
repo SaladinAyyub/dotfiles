@@ -19,4 +19,8 @@ M.ui = {
   },
 }
 
+M.mason = {
+  pkgs = { "rust-analyzer" },
+}
+
 return M
