@@ -5,6 +5,7 @@
     cargo-watch
     cargo-cache
     clang
+    dioxus-cli
     dotnetCorePackages.dotnet_9.sdk
     fvm
     go
