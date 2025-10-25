@@ -37,6 +37,15 @@ return {
   },
 
   {
+    "nvim-treesitter/nvim-treesitter-context",
+    dependencies = { "nvim-treesitter/nvim-treesitter" },
+    lazy = false,
+    config = function()
+      require("treesitter-context").setup()
+    end,
+  },
+
+  {
     "mfussenegger/nvim-dap",
     config = function()
       local dap, dapui = require "dap", require "dapui"
