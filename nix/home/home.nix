@@ -38,7 +38,8 @@
   xdg.configFile.waybar.source = config.lib.file.mkOutOfStoreSymlink /home/saladin/.dotfiles/.config/waybar;
   xdg.configFile.rofi.source = config.lib.file.mkOutOfStoreSymlink /home/saladin/.dotfiles/.config/rofi;
   home.file.".zshrc".source = config.lib.file.mkOutOfStoreSymlink /home/saladin/.dotfiles/.zshrc;
-
+  home.file.".cargo/config.toml".source =
+    config.lib.file.mkOutOfStoreSymlink /home/saladin/.dotfiles/.cargo/config.toml;
   dconf = {
     enable = true;
     settings."org/gnome/desktop/interface" = {

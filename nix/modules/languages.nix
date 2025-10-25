@@ -4,16 +4,14 @@
     bun
     cargo-watch
     cargo-cache
-    cmake
-    bear
+    clang
     dotnetCorePackages.dotnet_9.sdk
     fvm
     go
-    gcc
-    gdb
     gnumake
     lua
     zig
+    mold
     nodejs
     ninja
     nil
