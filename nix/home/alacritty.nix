@@ -36,7 +36,7 @@
         };
       in
       {
-        size = 16;
+        size = 15;
         normal = jetbrainsMono "Regular";
         bold = jetbrainsMono "Bold";
         italic = jetbrainsMono "Italic";

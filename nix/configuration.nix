@@ -123,12 +123,20 @@
     xwayland.enable = true;
   };
 
+  programs.niri = {
+    enable = true;
+  };
+
   xdg.portal = {
     enable = true;
     extraPortals = [
+      pkgs.xdg-desktop-portal-gnome # For Gnome / Niri
+      pkgs.xdg-desktop-portal-gtk # For Gnome / Niri
       pkgs.xdg-desktop-portal-hyprland # For Hyprland
     ];
     config.common.default = [
+      "gnome"
+      "gtk"
       "hyprland"
     ];
   };
