@@ -19,6 +19,7 @@
 
   "modules-left": [
     "custom/smallspacer",
+    "niri/workspaces",
     "hyprland/workspaces",
     "custom/spacer",
     "mpris",
@@ -182,6 +183,17 @@
       //"default": "○",
       //"default": "●"
     },
+  },
+
+  "niri/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "urgent": "",
+      "active": "",
+      "default": "",
+    },
+    "all-outputs": true,
+    "disable-click": false,
   },
 
   "cava": {
