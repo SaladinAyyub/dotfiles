@@ -23,7 +23,7 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
-    protonup
+    protonup-ng
     bibata-cursors
     morewaita-icon-theme
     inputs.zen-browser.packages.x86_64-linux.default
