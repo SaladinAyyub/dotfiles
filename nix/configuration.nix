@@ -183,6 +183,7 @@
     deluge
     dunst
     ente-auth
+    ente-desktop
     fd
     ffmpeg
     fzf
