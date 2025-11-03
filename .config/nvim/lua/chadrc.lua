@@ -23,4 +23,6 @@ M.mason = {
   pkgs = { "rust-analyzer" },
 }
 
+vim.g.lua_snippets_path = vim.fn.stdpath "config" .. "/lua/snippets"
+
 return M
