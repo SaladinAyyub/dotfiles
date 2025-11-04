@@ -214,6 +214,7 @@
     pkg-config
     protontricks
     prismlauncher
+    qutebrowser
     ripgrep
     rofi
     swww
