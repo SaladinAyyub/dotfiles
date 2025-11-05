@@ -27,7 +27,6 @@
     bibata-cursors
     morewaita-icon-theme
     inputs.zen-browser.packages.x86_64-linux.default
-    (pkgs.nur.repos.Ev357.helium.withWidevine or pkgs.nur.repos.Ev357.helium)
   ];
 
   xdg.enable = true;
@@ -62,6 +61,7 @@
   };
 
   programs = {
+    chromium = import ./chromium.nix { inherit pkgs; };
     alacritty = import ./alacritty.nix { inherit config pkgs; };
     fzf = import ./fzf.nix { inherit pkgs; };
     ghostty = import ./ghostty.nix { inherit pkgs; };
