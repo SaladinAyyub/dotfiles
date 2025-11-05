@@ -12,6 +12,10 @@
 
     alacritty-theme.url = "github:alexghr/alacritty-theme.nix";
     alacritty-theme.inputs.nixpkgs.follows = "nixpkgs";
+
+    nur = {
+      url = "github:nix-community/NUR";
+    };
   };
 
   outputs =
@@ -20,6 +24,7 @@
       nixpkgs,
       alacritty-theme,
       zen-browser,
+      nur,
       ...
     }@inputs:
     {
@@ -32,7 +37,7 @@
             { config, pkgs, ... }:
             {
               # install the overlay
-              nixpkgs.overlays = [ alacritty-theme.overlays.default ];
+              nixpkgs.overlays = [ alacritty-theme.overlays.default inputs.nur.overlays.default ];
             }
           )
           (

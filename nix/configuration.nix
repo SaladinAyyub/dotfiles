@@ -236,6 +236,10 @@
     zoxide
   ];
 
+  nixpkgs.overlays = [
+    (final: prev: { qutebrowser = prev.qutebrowser.override { enableWideVine = true; }; })
+  ];
+
   programs.steam.package = pkgs.steam.override {
     extraPkgs =
       pkgs: with pkgs; [
