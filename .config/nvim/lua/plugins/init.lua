@@ -32,6 +32,8 @@ return {
         "toml",
         "dart",
         "c_sharp",
+        "typescript",
+        "javascript",
       },
     },
   },
