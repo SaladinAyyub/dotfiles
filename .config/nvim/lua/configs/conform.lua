@@ -1,10 +1,12 @@
 local options = {
   formatters_by_ft = {
     lua = { "stylua" },
-    css = { "prettier" },
-    html = { "prettier" },
-    jsonc = { "prettier" },
-    json = { "prettier" },
+    css = { "biome-check", "biome" },
+    html = { "biome-check", "biome" },
+    jsonc = { "biome-check", "biome" },
+    json = { "biome-check", "biome" },
+    javascript = { "biome-check", "biome" },
+    typescript = { "biome-check", "biome" },
     go = { "gofumpt", "goimports-reviser", "golines" },
     python = { "ruff_format", "ruff_fix", "ruff_organize_imports" },
     rust = { "rustfmt" },

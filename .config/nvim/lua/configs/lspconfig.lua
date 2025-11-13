@@ -1,7 +1,7 @@
 -- load defaults i.e lua_lsp
 require("nvchad.configs.lspconfig").defaults()
 
-local servers = { "html", "cssls", "pyright", "zls", "taplo", "nil_ls", "ols", "omnisharp" }
+local servers = { "html", "cssls", "pyright", "zls", "gopls", "taplo", "nil_ls", "ols", "omnisharp", "ts_ls" }
 local util = require "lspconfig/util"
 
 vim.lsp.enable(servers)
@@ -18,6 +18,14 @@ vim.lsp.config.gopls = {
       analyses = {
         unusedparams = true,
       },
+    },
+  },
+}
+
+vim.lsp.config.ts_ls = {
+  init_options = {
+    preferences = {
+      disableSuggestions = true,
     },
   },
 }
