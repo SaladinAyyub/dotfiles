@@ -34,6 +34,7 @@ return {
         "c_sharp",
         "typescript",
         "javascript",
+        "tsx",
       },
     },
   },
