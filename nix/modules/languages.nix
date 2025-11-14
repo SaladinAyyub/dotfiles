@@ -14,6 +14,7 @@
     zig
     mold
     nodejs
+    ngrok
     ninja
     nil
     nixfmt-rfc-style
