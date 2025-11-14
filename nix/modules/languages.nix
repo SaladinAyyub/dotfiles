@@ -13,7 +13,6 @@
     lua
     zig
     mold
-    nodejs
     ngrok
     ninja
     nil
