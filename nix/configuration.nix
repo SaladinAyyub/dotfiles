@@ -223,6 +223,7 @@
     slurp
     steamguard-cli
     tutanota-desktop
+    nautilus
     teams-for-linux
     unityhub
     xwayland-satellite
