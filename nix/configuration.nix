@@ -70,8 +70,9 @@
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
-  # Enable gnome keyring
+  # Enable gnome keyring with auto-unlock
   services.gnome.gnome-keyring.enable = true;
+  security.pam.services.gdm.enableGnomeKeyring = true;
 
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
@@ -157,9 +158,10 @@
     inter
   ];
 
-  # Enable Gnome desktop
+  # Enable GDM display manager (works well with Niri/Hyprland)
   services.displayManager.gdm.enable = true;
-  services.desktopManager.gnome.enable = true;
+  # GNOME desktop disabled - using Niri/Hyprland instead
+  # services.desktopManager.gnome.enable = true;
 
   services.udev.packages = [ pkgs.gnome-settings-daemon ];
 
@@ -224,6 +226,7 @@
     teams-for-linux
     unityhub
     xwayland-satellite
+    yazi
     unrar
     unzip
     onlyoffice-desktopeditors
