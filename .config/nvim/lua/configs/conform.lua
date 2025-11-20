@@ -16,6 +16,7 @@ local options = {
     odin = { "odinfmt" },
     nix = { "nixfmt" },
     dart = { "dart_format" },
+    gd = { "gdformat" },
   },
 
   format_on_save = {
