@@ -155,11 +155,14 @@
     };
   };
 
-  fonts.packages = with pkgs; [
-    nerd-fonts.jetbrains-mono
-    iosevka
-    inter
-  ];
+  fonts = {
+    packages = with pkgs; [
+      nerd-fonts.jetbrains-mono
+      iosevka
+      inter
+    ];
+    fontconfig.enable = true;
+  };
 
   # Enable GDM display manager (works well with Niri/Hyprland)
   services.displayManager.gdm.enable = true;
@@ -172,7 +175,11 @@
 
   nixpkgs.config.allowUnfree = true;
 
-  hardware.graphics.extraPackages = with pkgs; [ mesa.opencl ];
+  hardware.graphics = {
+    enable = true;
+    enable32Bit = true;
+    extraPackages = with pkgs; [ mesa.opencl ];
+  };
   environment.variables = {
     RUSTICL_ENABLE = "radeonsi";
   };
@@ -251,6 +258,16 @@
     extraPkgs =
       pkgs: with pkgs; [
         nss
+        xorg.libXcursor
+        xorg.libXi
+        xorg.libXinerama
+        xorg.libXScrnSaver
+        libpng
+        libpulseaudio
+        libvorbis
+        stdenv.cc.cc.lib
+        libkrb5
+        keyutils
       ];
   };
 
