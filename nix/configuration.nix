@@ -149,6 +149,8 @@
 
   programs.steam = {
     enable = true;
+    remotePlay.openFirewall = true; # For Steam Remote Play
+    dedicatedServer.openFirewall = true; # For Source Dedicated Server hosting
     extraCompatPackages = [ pkgs.proton-ge-bin ];
     gamescopeSession = {
       enable = true;
@@ -257,7 +259,6 @@
   programs.steam.package = pkgs.steam.override {
     extraPkgs =
       pkgs: with pkgs; [
-        nss
         xorg.libXcursor
         xorg.libXi
         xorg.libXinerama
