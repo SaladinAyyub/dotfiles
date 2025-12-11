@@ -10,6 +10,7 @@
     fvm
     go
     gnumake
+    jdk
     lua
     zig
     mold
