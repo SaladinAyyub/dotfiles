@@ -77,6 +77,7 @@
 
   services.gvfs.enable = true;
   security.polkit.enable = true;
+  services.udisks2.enable = true;
 
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
@@ -114,6 +115,17 @@
       "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILhxuQm7+naB8nLmZaX8z/3WKI1w+TuHEkEakwO6TQxE saladin nixos"
     ];
   };
+
+  security.polkit.extraConfig = ''
+    polkit.addRule(function(action, subject) {
+      if ((action.id == "org.freedesktop.udisks2.filesystem-mount-system" ||
+           action.id == "org.freedesktop.udisks2.filesystem-mount" ||
+           action.id == "org.freedesktop.udisks2.modify-device") &&
+          subject.isInGroup("wheel")) {
+        return polkit.Result.YES;
+      }
+    });
+  '';
 
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
@@ -219,6 +231,7 @@
     libnotify
     loupe
     lutris
+    lxqt.lxqt-policykit
     mangohud
     mesa-demos
     neovim

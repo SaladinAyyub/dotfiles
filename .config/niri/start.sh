@@ -9,3 +9,5 @@ nm-applet --indicator &
 waybar &
 
 dunst
+
+lxqt-policykit-agent
