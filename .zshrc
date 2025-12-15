@@ -73,9 +73,6 @@ export PATH=$PATH:$HOME/.npm-global/bin
 export ANDROID_AVD_HOME=$HOME/.android/avd
 export PATH="$HOME/fvm/default/bin:$PATH"
 
-# Load API Keys
-source ~/.api_keys
-
 # Pyenv support
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"

@@ -255,6 +255,7 @@
     teams-for-linux
     unityhub
     xwayland-satellite
+    xdg-user-dirs
     yazi
     unrar
     unzip
