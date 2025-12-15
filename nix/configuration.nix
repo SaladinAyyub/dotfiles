@@ -107,6 +107,7 @@
       "wheel"
       "adbusers"
       "kvm"
+      "disk"
     ];
     shell = pkgs.zsh;
     openssh.authorizedKeys.keys = [
