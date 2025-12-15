@@ -76,6 +76,7 @@
   security.pam.services.login.enableGnomeKeyring = true;
 
   services.gvfs.enable = true;
+  security.polkit.enable = true;
 
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
