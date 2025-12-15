@@ -206,6 +206,7 @@
     gimp3
     git
     gnomeExtensions.appindicator
+    gnome-disk-utility
     godot
     grim
     gh
