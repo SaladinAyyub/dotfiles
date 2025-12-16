@@ -23,6 +23,7 @@ return {
         "vimdoc",
         "html",
         "css",
+        "cpp",
         "json",
         "go",
         "python",

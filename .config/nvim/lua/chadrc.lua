@@ -20,7 +20,7 @@ M.ui = {
 }
 
 M.mason = {
-  pkgs = { "rust-analyzer" },
+  pkgs = { "rust-analyzer", "gopls", "clangd" },
 }
 
 vim.g.lua_snippets_path = vim.fn.stdpath "config" .. "/lua/snippets"

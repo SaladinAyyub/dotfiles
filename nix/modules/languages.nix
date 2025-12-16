@@ -20,6 +20,7 @@
     nil
     nixfmt-rfc-style
     mold
+    gcc
     python3
     pocketbase
     rustup

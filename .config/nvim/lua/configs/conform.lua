@@ -17,6 +17,7 @@ local options = {
     nix = { "nixfmt" },
     dart = { "dart_format" },
     gd = { "gdformat" },
+    cpp = { "clang-format" },
   },
 
   format_on_save = {
