@@ -79,6 +79,8 @@
   security.polkit.enable = true;
   services.udisks2.enable = true;
 
+  hardware.openrazer.enable = true;
+
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
@@ -109,6 +111,7 @@
       "adbusers"
       "kvm"
       "disk"
+      "openrazer"
     ];
     shell = pkgs.zsh;
     openssh.authorizedKeys.keys = [
@@ -241,6 +244,8 @@
     openssl
     papirus-icon-theme
     pavucontrol
+    polychromatic
+    openrazer-daemon
     pkg-config
     protontricks
     prismlauncher
