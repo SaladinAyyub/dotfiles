@@ -69,7 +69,7 @@ alias android-emulator='emulator -avd phone -skin 720x1280 -noaudio -no-snapshot
 export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:$HOME/.local/bin
 export PATH=$PATH:$HOME/.npm-global/bin
-
+export PATH=$PATH:$HOME/.cache/.bun/bin
 export ANDROID_AVD_HOME=$HOME/.android/avd
 export PATH="$HOME/fvm/default/bin:$PATH"
 
